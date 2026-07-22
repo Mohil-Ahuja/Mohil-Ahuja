@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Mohil Ahuja</h1>
-<h3 align="center">CS + AI student · Builder across full-stack, ML/RL, and systems engineering</h3>
+<h3 align="center">CS + AI student · Building across full-stack, ML/RL, and cybersecurity</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Building+at+the+intersection+of+software+%26+ML;Currently+interning+at+Barclays+CISO+Office;Co-founder+%40+UniEngage;Always+shipping+something+new" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Building+at+the+intersection+of+software+%26+ML;Interned+at+Barclays+CISO+Office;Co-founder+%40+UniEngage;Always+shipping+something+new" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 - 🏗️ Co-founder of **UniEngage**, a DPIIT-recognized campus super-app
 - 🧠 Interested in ML/RL systems, low-level systems engineering, and full-stack product development
 - 🛡️ ISC2 Certified in Cybersecurity, with hands-on red-team and forensics experience
-- ⚡ Fun fact: I like combining things that don't usually go together — kernel drivers with computer vision, RL agents with trading systems, deep learning with CAD engineering
+- ⚡ Fun fact: I like combining things that don't usually go together — deep learning with CAD engineering, agent authorization with cybersecurity, RL agents with trading systems
 
 ---
 
@@ -34,13 +34,17 @@ End-to-end deep learning system reconstructing 3D parametric CAD models from 2D 
 
 `PyTorch` `build123d` `OCP` `Streamlit`
 
+[🔗 View Repo](#)
+
 </td>
 <td width="50%">
 
-**📷 Real-Time Vision Pipeline — Custom V4L2 Driver**
-A custom Linux V4L2 character device driver in C paired with a multi-threaded C++ real-time object detection pipeline on ARM, with lock-free ring buffers for low-latency frame handling.
+**🔐 Steward — AI Agent Authorization Layer**
+An authorization and audit framework for LLM agents built on the Model Context Protocol, enforcing per-action permission scopes with a policy engine and evaluation pipelines to test agent behavior under varying constraints.
 
-`C` `C++` `Linux Kernel` `ONNX Runtime`
+`Python` `MCP` `OAuth 2.0` `REST APIs`
+
+[🔗 View Repo](#)
 
 </td>
 </tr>
@@ -52,6 +56,8 @@ YOLOv11-based image processing pipeline — 100+ experiments across augmentation
 
 `YOLOv11` `Mask2Former` `SAM` `CometML`
 
+[🔗 View Repo](#)
+
 </td>
 <td width="50%">
 
@@ -59,6 +65,8 @@ YOLOv11-based image processing pipeline — 100+ experiments across augmentation
 Built and benchmarked PPO, GRPO, and DQN agents in a custom Gymnasium environment, designing reward functions and evaluation workflows to compare algorithmic performance.
 
 `Python` `PyTorch` `PPO` `GRPO` `DQN`
+
+[🔗 View Repo](#)
 
 </td>
 </tr>
@@ -70,6 +78,8 @@ Co-founded and shipped a cross-platform app to the Apple App Store — scalable 
 
 `React Native` `Node.js` `MongoDB`
 
+[🔗 View Repo](#)
+
 </td>
 <td width="50%">
 
@@ -77,6 +87,8 @@ Co-founded and shipped a cross-platform app to the Apple App Store — scalable 
 Distributed backend on AWS microservices for a subscription system with real-time payment settlement via the Stellar SDK. Awarded a **$10,000 grant** by the Stellar Development Foundation.
 
 `Next.js` `PostgreSQL` `AWS` `Stellar SDK`
+
+[🔗 View Repo](#)
 
 </td>
 </tr>
