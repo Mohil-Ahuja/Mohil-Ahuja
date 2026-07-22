@@ -2,7 +2,7 @@
 <h3 align="center">CS + AI student · Building across full-stack, ML/RL, and cybersecurity</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Building+at+the+intersection+of+software+%26+ML;Interned+at+Barclays+CISO+Office;Co-founder+%40+UniEngage;Always+shipping+something+new" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Building+at+the+intersection+of+software+%26+ML;Currently+interning+at+Barclays+CISO+Office;Co-founder+%40+UniEngage;Always+shipping+something+new" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -30,16 +30,18 @@
 <td width="50%">
 
 **🔧 2D-to-3D CAD Reconstruction Pipeline**
+
 End-to-end deep learning system reconstructing 3D parametric CAD models from 2D orthographic drawings, using a ResNet-Transformer Seq2Seq architecture and a sandboxed `build123d` sequence executor with downstream DFM/cost analysis.
 
 `PyTorch` `build123d` `OCP` `Streamlit`
 
-[🔗 View Repo](#)
+[🔗 View Repo](https://github.com/Mohil-Ahuja/2D-to-3D-CAD-Reconstruction.git)
 
 </td>
 <td width="50%">
 
 **🔐 Steward — AI Agent Authorization Layer**
+
 An authorization and audit framework for LLM agents built on the Model Context Protocol, enforcing per-action permission scopes with a policy engine and evaluation pipelines to test agent behavior under varying constraints.
 
 `Python` `MCP` `OAuth 2.0` `REST APIs`
@@ -52,21 +54,23 @@ An authorization and audit framework for LLM agents built on the Model Context P
 <td width="50%">
 
 **🌳 Tree Canopy Instance Segmentation**
+
 YOLOv11-based image processing pipeline — 100+ experiments across augmentation strategies and IoU tuning, improving weighted mAP from 0.33 → 0.42. **Top-14 globally among 143 teams.**
 
 `YOLOv11` `Mask2Former` `SAM` `CometML`
 
-[🔗 View Repo](#)
+[🔗 View Repo](https://github.com/Mohil-Ahuja/TreeCanopySegmentor.git)
 
 </td>
 <td width="50%">
 
 **🎮 RL Agents for a Custom Puzzle Environment**
+
 Built and benchmarked PPO, GRPO, and DQN agents in a custom Gymnasium environment, designing reward functions and evaluation workflows to compare algorithmic performance.
 
 `Python` `PyTorch` `PPO` `GRPO` `DQN`
 
-[🔗 View Repo](#)
+[🔗 View Repo](https://github.com/vaibhavdabas16/candy-crush)
 
 </td>
 </tr>
@@ -74,21 +78,23 @@ Built and benchmarked PPO, GRPO, and DQN agents in a custom Gymnasium environmen
 <td width="50%">
 
 **🎓 UniEngage — Student Engagement Platform**
+
 Co-founded and shipped a cross-platform app to the Apple App Store — scalable backend APIs, moderation systems, and analytics pipelines, gearing up for a 500+ student pilot.
 
 `React Native` `Node.js` `MongoDB`
 
-[🔗 View Repo](#)
+[🔗 View Repo](https://apps.apple.com/in/app/uniengage/id6764577363)
 
 </td>
 <td width="50%">
 
 **💸 Kryo — Web3 Payments & Subscription Platform**
+
 Distributed backend on AWS microservices for a subscription system with real-time payment settlement via the Stellar SDK. Awarded a **$10,000 grant** by the Stellar Development Foundation.
 
 `Next.js` `PostgreSQL` `AWS` `Stellar SDK`
 
-[🔗 View Repo](#)
+[🔗 View Repo](https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE)
 
 </td>
 </tr>
