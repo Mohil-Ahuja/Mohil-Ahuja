@@ -98,6 +98,24 @@ Distributed backend on AWS microservices for a subscription system with real-tim
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+**&#128269; Research Scout — arXiv Literature Retrieval Agent**
+
+Multi-step retrieval agent that searches arXiv, semantically reranks papers with local sentence-transformer embeddings, and uses the Grok API to synthesize a source-linked research digest in JSON and Markdown.
+
+`Python` `arXiv API` `Sentence Transformers` `Grok API` `FastAPI`
+
+[&#128279; View Repo](https://github.com/Mohil-Ahuja/research-scout)
+
+</td>
+<td width="50%">
+
+&nbsp;
+
+</td>
+</tr>
 </table>
 
 ---
