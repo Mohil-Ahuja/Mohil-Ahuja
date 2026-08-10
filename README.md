@@ -112,10 +112,18 @@ Multi-step retrieval agent that searches arXiv, semantically reranks papers with
 </td>
 <td width="50%">
 
-&nbsp;
+**🧠 LLM Peer Review Agent**
+
+Self-correcting AI review agent that critiques written work across three iterative rounds, audits its own feedback, and compares rubric-based clarity and rigor scores against a single-pass baseline.
+
+`Python` `FastAPI` `React` `SQLite` `Grok API`
+
+[🔗 View Repo](https://github.com/Mohil-Ahuja/LLM-Peer-Review-Agent)
 
 </td>
 </tr>
+
+
 </table>
 
 ---
