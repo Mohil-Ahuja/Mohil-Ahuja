@@ -46,7 +46,7 @@ An authorization and audit framework for LLM agents built on the Model Context P
 
 `Python` `MCP` `OAuth 2.0` `REST APIs`
 
-[🔗 View Repo](#)
+[🔗 View Repo](https://github.com/Mohil-Ahuja/Steward.git)
 
 </td>
 </tr>
