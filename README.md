@@ -15,7 +15,7 @@
 ### 🚀 About Me
 
 - 🎓 BTech Computer Science & AI @ **Plaksha University** (Minor: Tech Entrepreneurship)
-- 💼 Currently interning at **Barclays' CISO Office**, building data quality and deployment automation systems
+- 💼 Interned at **Barclays' CISO Office**, building data quality and deployment automation systems
 - 🏗️ Co-founder of **UniEngage**, a DPIIT-recognized campus super-app
 - 🧠 Interested in ML/RL systems, low-level systems engineering, and full-stack product development
 - 🛡️ ISC2 Certified in Cybersecurity, with hands-on red-team and forensics experience
