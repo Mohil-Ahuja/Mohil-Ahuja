@@ -19,7 +19,7 @@
 - 🏗️ Co-founder of **UniEngage**, a DPIIT-recognized campus super-app
 - 🧠 Interested in ML/RL systems, low-level systems engineering, and full-stack product development
 - 🛡️ ISC2 Certified in Cybersecurity, with hands-on red-team and forensics experience
-- ⚡ Fun fact: I like combining things that don't usually go together — deep learning with CAD engineering, agent authorization with cybersecurity, RL agents with trading systems
+- ⚡ Fun fact: I like combining things that don't usually go together, deep learning with CAD engineering, agent authorization with cybersecurity, RL agents with trading systems
 
 ---
 
