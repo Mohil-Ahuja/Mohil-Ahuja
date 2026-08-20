@@ -29,13 +29,13 @@
 <tr>
 <td width="50%">
 
-**🔧 2D-to-3D CAD Reconstruction Pipeline**
+**⚡ Low-Latency Order Book Engine**
 
-End-to-end deep learning system reconstructing 3D parametric CAD models from 2D orthographic drawings, using a ResNet-Transformer Seq2Seq architecture and a sandboxed `build123d` sequence executor with downstream DFM/cost analysis.
+NASDAQ ITCH 5.0 / MoldUDP64 market-data feed handler reconstructing limit order books from a live UDP multicast feed. Zero-allocation hot path with a lock-free SPSC ring, sustaining 3M msg/sec at sub-10µs p50 latency, validated against 15.2M real NASDAQ messages.
 
-`PyTorch` `build123d` `OCP` `Streamlit`
+`C++23` `Linux` `io_uring` `TSan/ASan`
 
-[🔗 View Repo](https://github.com/Mohil-Ahuja/2D-to-3D-CAD-Reconstruction.git)
+[🔗 View Repo](https://github.com/Mohil-Ahuja/low-latency-order-book-engine)
 
 </td>
 <td width="50%">
