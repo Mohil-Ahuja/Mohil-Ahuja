@@ -1,0 +1,176 @@
+# Hand-declared facts. Everything else on the profile is pulled live from the
+# GitHub API at build time. Keep claims here to things that are measured or
+# externally verifiable.
+
+[identity]
+name      = "MOHIL AHUJA"
+handle    = "Mohil-Ahuja"
+role      = "CS + AI @ Plaksha  ·  systems, ML, and security"
+thesis    = "I build things at the seams between fields, then measure them until the numbers stop flattering me."
+location  = "India"
+email     = "mohilahuja@gmail.com"
+linkedin  = "https://www.linkedin.com/in/mohil-ahuja-ba559722b/"
+
+# ---------------------------------------------------------------------------
+# Telemetry tiles, rendered in this order, two per row.
+#   status : live | shipped | done
+#   repo   : owner/name for commit-activity telemetry ("" = no public repo)
+# ---------------------------------------------------------------------------
+
+[[project]]
+key     = "orderbook"
+title   = "low-latency-order-book-engine"
+repo    = "Mohil-Ahuja/low-latency-order-book-engine"
+href    = "https://github.com/Mohil-Ahuja/low-latency-order-book-engine"
+status  = "live"
+value   = "4.74"
+unit    = "µs"
+caption = "p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages"
+stack   = "C++23 · io_uring · lock-free SPSC · MoldUDP64"
+note    = "real data cut the synthetic speedup 3.6× → 1.42×; the correction is in the README"
+
+[[project]]
+key     = "steward"
+title   = "steward"
+repo    = "Mohil-Ahuja/Steward"
+href    = "https://github.com/Mohil-Ahuja/Steward"
+status  = "live"
+value   = "MCP"
+unit    = "authz"
+caption = "per-action permission scopes and audit trail for LLM agents"
+stack   = "Python · Model Context Protocol · OAuth 2.0"
+note    = "evaluation pipelines measure agent behaviour under tightening constraints"
+
+[[project]]
+key     = "canopy"
+title   = "tree-canopy-segmentor"
+repo    = "Mohil-Ahuja/TreeCanopySegmentor"
+href    = "https://github.com/Mohil-Ahuja/TreeCanopySegmentor"
+status  = "done"
+value   = "0.42"
+unit    = "mAP"
+caption = "up from 0.33 across 100+ experiments · 14th of 143 teams"
+stack   = "YOLOv11 · Mask2Former · SAM · CometML"
+note    = "augmentation and IoU sweeps tracked end to end"
+
+[[project]]
+key     = "kryo"
+title   = "kryo"
+repo    = ""
+href    = "https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"
+status  = "shipped"
+value   = "$10K"
+unit    = "grant"
+caption = "Stellar Development Foundation · real-time payment settlement"
+stack   = "Next.js · PostgreSQL · AWS microservices · Stellar SDK"
+note    = "subscription billing with on-chain settlement"
+
+[[project]]
+key     = "uniengage"
+title   = "uniengage"
+repo    = ""
+href    = "https://apps.apple.com/in/app/uniengage/id6764577363"
+status  = "shipped"
+value   = "iOS"
+unit    = "live"
+caption = "co-founded · DPIIT-recognised · 500+ student pilot"
+stack   = "React Native · Node.js · MongoDB"
+note    = "moderation systems and analytics pipelines behind a campus super-app"
+
+[[project]]
+key     = "rl"
+title   = "rl-puzzle-agents"
+repo    = "vaibhavdabas16/candy-crush"
+href    = "https://github.com/vaibhavdabas16/candy-crush"
+status  = "done"
+value   = "3"
+unit    = "agents"
+caption = "PPO, GRPO and DQN benchmarked in a custom Gymnasium environment"
+stack   = "PyTorch · Gymnasium · reward shaping"
+note    = "same environment, same budget, three learning rules"
+
+# ---------------------------------------------------------------------------
+
+[[secondary]]
+title = "research-scout"
+href  = "https://github.com/Mohil-Ahuja/research-scout"
+blurb = "arXiv retrieval agent with local embedding rerank and source-linked digests"
+
+[[secondary]]
+title = "llm-peer-review-agent"
+href  = "https://github.com/Mohil-Ahuja/LLM-Peer-Review-Agent"
+blurb = "three-round self-critiquing reviewer scored against a single-pass baseline"
+
+# ---------------------------------------------------------------------------
+# Capability bars. `weight` is a self-assessed 0-100 depth, shown alongside the
+# real byte share the GitHub API reports, so the honest and the claimed sit
+# side by side. Each language belongs to exactly one bucket, so the shares
+# add up instead of double-counting.
+# ---------------------------------------------------------------------------
+
+[[capability]]
+label = "Systems / low-level"
+weight = 88
+langs = ["C++", "C", "CMake", "Makefile"]
+detail = "cache-aware data structures, kernel-bypass-adjacent I/O, latency measurement"
+
+[[capability]]
+label = "ML & RL"
+weight = 80
+langs = ["Python"]
+detail = "instance segmentation, policy-gradient methods, experiment tracking"
+
+[[capability]]
+label = "Backend / distributed"
+weight = 76
+langs = ["TypeScript", "JavaScript", "Go"]
+detail = "service decomposition, payment settlement, analytics pipelines"
+
+[[capability]]
+label = "Security"
+weight = 68
+langs = ["Shell", "PowerShell", "Dockerfile"]
+detail = "agent authorization, data-quality tooling, red-team and forensics practice"
+
+[[capability]]
+label = "Product / shipping"
+weight = 72
+langs = ["Swift", "Kotlin", "Dart", "Objective-C"]
+detail = "two products in users' hands, one on the App Store"
+
+# ---------------------------------------------------------------------------
+
+[[ledger]]
+year = "2025"
+what = "Barclays — CISO Office"
+detail = "data-quality and deployment-automation systems"
+
+[[ledger]]
+year = "2025"
+what = "$10,000 · Stellar Development Foundation"
+detail = "Kryo"
+
+[[ledger]]
+year = "2024"
+what = "$10,000 · Emergent Ventures"
+detail = "algae-based air purifier"
+
+[[ledger]]
+year = "2025"
+what = "Top 14 of 143 · Tree Canopy Segmentation Challenge"
+detail = "weighted mAP 0.33 → 0.42"
+
+[[ledger]]
+year = "2024"
+what = "Top 3 · BCG Ideathon"
+detail = "quantitative microfinance credit model"
+
+[[ledger]]
+year = "2024"
+what = "2nd place · Plaksha Hackathon"
+detail = ""
+
+[[ledger]]
+year = "2024"
+what = "ISC2 Certified in Cybersecurity"
+detail = ""

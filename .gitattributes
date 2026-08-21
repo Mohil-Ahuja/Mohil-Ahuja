@@ -1,0 +1,9 @@
+# The generator writes LF. Pinning it keeps a Linux Actions run from producing
+# a diff that is nothing but line endings.
+*.svg   text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.toml  text eol=lf
+*.yml   text eol=lf
+*.ttf   binary

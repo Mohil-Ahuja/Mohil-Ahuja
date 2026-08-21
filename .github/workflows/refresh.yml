@@ -1,0 +1,51 @@
+name: refresh profile
+
+on:
+  schedule:
+    # Every six hours. GitHub's commit-activity statistics are cached on their
+    # side anyway, so a tighter cadence would mostly re-commit identical bytes.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/profile.toml"
+      - "generator/**"
+      - ".github/workflows/refresh.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install font tooling
+        run: pip install --quiet fonttools brotli
+
+      - name: Render panels and README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generator/build.py
+
+      - name: Commit if anything actually changed
+        run: |
+          git config user.name  "Mohil-Ahuja"
+          git config user.email "mohilahuja@gmail.com"
+          git add -A assets README.md data/cache.json
+          if git diff --cached --quiet; then
+            echo "No change in the rendered profile; nothing to commit."
+            exit 0
+          fi
+          git commit -m "Refresh profile telemetry"
+          git push
