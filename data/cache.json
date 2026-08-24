@@ -3,18 +3,18 @@
   "C": 1250,
   "C++": 232724,
   "CMake": 6317,
-  "Dockerfile": 1707,
+  "Dockerfile": 2494,
   "JavaScript": 5119,
   "Makefile": 3089,
   "PowerShell": 4398,
-  "Python": 840767,
+  "Python": 1266518,
   "Shell": 28147,
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-08-18T05:01:17Z",
+  "at": "2026-08-24T13:16:55Z",
   "message": "",
-  "repo": "Mohil-Ahuja/composio-toolkit-research"
+  "repo": "Mohil-Ahuja/Steward"
  },
  "series": {
   "canopy": [
@@ -229,16 +229,16 @@
    0,
    0,
    1,
-   1,
-   0,
-   0,
-   0
+   2,
+   4,
+   5,
+   1
   ],
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 209,
-  "last_push": "2026-08-18",
+  "contrib_total": 221,
+  "last_push": "2026-08-24",
   "primary_lang": "Python",
   "repos": 27
  }
