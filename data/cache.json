@@ -5,9 +5,9 @@
   "CMake": 6317,
   "Dockerfile": 2494,
   "JavaScript": 5119,
-  "Makefile": 3089,
+  "Makefile": 3619,
   "PowerShell": 4398,
-  "Python": 1635244,
+  "Python": 2421748,
   "Rust": 9060,
   "Shell": 28147,
   "TypeScript": 7709
@@ -238,9 +238,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 282,
+  "contrib_total": 296,
   "last_push": "2026-08-31",
   "primary_lang": "Python",
-  "repos": 29
+  "repos": 30
  }
 }
