@@ -13,9 +13,9 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-09-11T10:44:51Z",
+  "at": "2026-09-10T19:52:50Z",
   "message": "",
-  "repo": "Mohil-Ahuja/langfuse"
+  "repo": "Mohil-Ahuja/traceroot"
  },
  "series": {
   "canopy": [
@@ -238,8 +238,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 352,
-  "last_push": "2026-09-11",
+  "contrib_total": 353,
+  "last_push": "2026-09-10",
   "primary_lang": "Python",
   "repos": 33
  }
