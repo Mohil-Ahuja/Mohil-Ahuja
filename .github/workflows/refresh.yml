@@ -42,10 +42,25 @@ jobs:
         run: |
           git config user.name  "Mohil-Ahuja"
           git config user.email "mohilahuja@gmail.com"
-          git add -A assets README.md data/cache.json
+          # version.json records when the rendered output last actually
+          # changed. Leaving it uncommitted meant every run compared against a
+          # stale digest, re-stamped the README with today's date, and pushed a
+          # commit that changed nothing but that line.
+          git add -A assets README.md data/cache.json data/version.json
           if git diff --cached --quiet; then
             echo "No change in the rendered profile; nothing to commit."
             exit 0
           fi
           git commit -m "Refresh profile telemetry"
-          git push
+          # A scheduled run and a hand push can land in the same minute, and
+          # the loser is rejected as stale. Rebasing and retrying keeps the
+          # refresh from being skipped for six hours over a race.
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected; rebasing on origin/main (attempt $attempt)."
+            git pull --rebase --autostash origin main
+          done
+          echo "Could not push after three attempts." >&2
+          exit 1
