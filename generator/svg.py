@@ -161,59 +161,19 @@ class Doc:
         self.add('<path d="%s L%.1f,%.1f L%.1f,%.1f Z" fill="url(#%s)"/>'
                  % (d, pts[-1][0], y + h, pts[0][0], y + h, gid))
 
-        length = int(sum(math.dist(pts[i], pts[i + 1])
-                         for i in range(n - 1)) * 1.2) + 12
-        cls = self.uid("sp")
-        # The hidden state lives only inside the keyframes, and there is no
-        # fill mode: a renderer that never runs the animation — GitHub's image
-        # proxy, for one — must show the finished trace, not the empty first
-        # frame that a backwards fill would hold it at.
-        self.css.append(
-            ".%s{animation:d%s 1.15s cubic-bezier(.4,0,.2,1) %ss}"
-            "@keyframes d%s{from{stroke-dasharray:%d;stroke-dashoffset:%d}"
-            "to{stroke-dasharray:%d;stroke-dashoffset:0}}"
-            % (cls, cls, delay, cls, length, length, length))
-        self.add('<path class="%s" d="%s" fill="none" stroke="%s" '
+        # Drawn statically. These panels exist to be read on a GitHub profile,
+        # which renders them through an image proxy that never runs the CSS
+        # animation — and an animated stroke that never advances past its
+        # first frame is an invisible one.
+        self.add('<path d="%s" fill="none" stroke="%s" '
                  'stroke-width="1.6" stroke-linecap="round" '
-                 'stroke-linejoin="round"/>' % (cls, d, color))
+                 'stroke-linejoin="round"/>' % (d, color))
         if baseline:
             self.line(x, y + h, x + w, y + h, color, 1, opacity=0.16)
         if marker:
-            fade = self.uid("fd")
-            self.css.append(
-                ".%s{animation:f%s .4s ease-out %ss}"
-                "@keyframes f%s{from{opacity:0}to{opacity:1}}"
-                % (fade, fade, round(delay + 1.1, 2), fade))
-            self.add('<circle class="%s" cx="%.1f" cy="%.1f" r="2.1" '
-                     'fill="%s"/>' % (fade, pts[-1][0], pts[-1][1], color))
+            self.add('<circle cx="%.1f" cy="%.1f" r="2.1" fill="%s"/>'
+                     % (pts[-1][0], pts[-1][1], color))
 
-
-    def bars(self, x, y, w, h, values, color, delay=0.0, min_h=1.5):
-        """Discrete weekly counts.
-
-        Commit activity is sparse and bursty. A smoothed area chart would draw
-        a continuous signal through weeks that contain nothing, so the counts
-        are drawn as what they are.
-        """
-        if not values:
-            return
-        n = len(values)
-        hi = max(values) or 1
-        slot = w / float(n)
-        bw = max(1.6, slot * 0.62)
-        cls = self.uid("bs")
-        self.css.append(
-            ".%s{animation:g%s .5s ease-out}"
-            "@keyframes g%s{from{opacity:0}to{opacity:1}}" % (cls, cls, cls))
-        for i, v in enumerate(values):
-            bh = max(min_h, h * v / float(hi)) if v else min_h * 0.8
-            bx = x + i * slot + (slot - bw) / 2.0
-            op = 1.0 if v else 0.16
-            self.add('<rect class="%s" x="%.1f" y="%.1f" width="%.1f" '
-                     'height="%.1f" rx="%.1f" fill="%s" opacity="%.2f" '
-                     'style="animation-delay:%.2fs"/>'
-                     % (cls, bx, y + h - bh, bw, bh, min(1.0, bw / 2.0),
-                        color, op, delay + i * 0.012))
 
     def render(self):
         faces = []

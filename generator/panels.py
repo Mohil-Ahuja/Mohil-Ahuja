@@ -25,26 +25,6 @@ def fit(s, size, maxw):
     return s if len(s) <= n else s[: max(0, n - 1)].rstrip(" ·,;") + "…"
 
 
-def _dash_in(doc, cls_prefix, length, dur, delay):
-    """Draw a stroke in once, leaving it drawn.
-
-    Deliberately no `animation-fill-mode`. GitHub renders these panels through
-    its image proxy, where the animation does not run at all — and with `both`
-    the backwards fill pinned every bar to its hidden first keyframe, so the
-    capability bars showed as empty tracks on the profile while looking
-    correct when the SVG was opened directly. With no fill mode the element's
-    own attributes are the resting state, so a renderer that ignores the
-    animation shows the finished bar.
-    """
-    cls = doc.uid(cls_prefix)
-    doc.css.append(
-        ".%s{animation:k%s %ss cubic-bezier(.35,0,.15,1) %ss}"
-        "@keyframes k%s{from{stroke-dasharray:%d;stroke-dashoffset:%d}"
-        "to{stroke-dasharray:%d;stroke-dashoffset:0}}"
-        % (cls, cls, dur, delay, cls, length, length, length))
-    return cls
-
-
 # ---------------------------------------------------------------------------
 # Hero
 # ---------------------------------------------------------------------------
@@ -323,24 +303,23 @@ def capability(theme, caps, shares):
         d.text(24, y, c["label"], size=11, fill=t["text"])
         d.text(24, y + 13, fit(c["detail"], 8.5, 358), size=8.5, fill=t["dim"])
 
-        # Depth: the claim.
+        # Depth: the claim. Drawn statically — GitHub's image proxy does not
+        # run the CSS animations, and a bar whose length is animated in is a
+        # bar nobody sees on the one page this panel exists for.
         d.line(x0, y - 6, x0 + bw, y - 6, t["border"], 6, opacity=0.75)
         w = bw * c["weight"] / 100.0
-        cls = _dash_in(d, "bar", int(w) + 2, 0.9, round(0.2 + i * 0.08, 2))
-        d.add('<line class="%s" x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" '
+        d.add('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" '
               'stroke="url(#%s)" stroke-width="6" stroke-linecap="round"/>'
-              % (cls, x0, y - 6, x0 + w, y - 6, bg))
+              % (x0, y - 6, x0 + w, y - 6, bg))
 
         # Share of public bytes: a different quantity, so a different mark.
         share = shares.get(c["label"], 0.0)
         sw_ = bw * share
         d.line(x0, y + 3, x0 + bw, y + 3, t["border"], 2, opacity=0.5)
         if sw_ > 0.5:
-            cls2 = _dash_in(d, "sbar", int(sw_) + 2, 0.9,
-                            round(0.35 + i * 0.08, 2))
-            d.add('<line class="%s" x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" '
+            d.add('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" '
                   'stroke="%s" stroke-width="2.5" stroke-linecap="round"/>'
-                  % (cls2, x0, y + 3, x0 + sw_, y + 3, t["data"]))
+                  % (x0, y + 3, x0 + sw_, y + 3, t["data"]))
 
         d.text(CAP_W - 24, y - 2, str(c["weight"]), size=11, weight=700,
                fill=t["text_bright"], anchor="end")
