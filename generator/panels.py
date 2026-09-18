@@ -26,9 +26,19 @@ def fit(s, size, maxw):
 
 
 def _dash_in(doc, cls_prefix, length, dur, delay):
+    """Draw a stroke in once, leaving it drawn.
+
+    Deliberately no `animation-fill-mode`. GitHub renders these panels through
+    its image proxy, where the animation does not run at all — and with `both`
+    the backwards fill pinned every bar to its hidden first keyframe, so the
+    capability bars showed as empty tracks on the profile while looking
+    correct when the SVG was opened directly. With no fill mode the element's
+    own attributes are the resting state, so a renderer that ignores the
+    animation shows the finished bar.
+    """
     cls = doc.uid(cls_prefix)
     doc.css.append(
-        ".%s{animation:k%s %ss cubic-bezier(.35,0,.15,1) %ss both}"
+        ".%s{animation:k%s %ss cubic-bezier(.35,0,.15,1) %ss}"
         "@keyframes k%s{from{stroke-dasharray:%d;stroke-dashoffset:%d}"
         "to{stroke-dasharray:%d;stroke-dashoffset:0}}"
         % (cls, cls, dur, delay, cls, length, length, length))

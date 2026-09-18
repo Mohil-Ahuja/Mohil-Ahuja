@@ -164,11 +164,12 @@ class Doc:
         length = int(sum(math.dist(pts[i], pts[i + 1])
                          for i in range(n - 1)) * 1.2) + 12
         cls = self.uid("sp")
-        # The hidden state lives only inside the keyframes. If a renderer
-        # ignores CSS animation entirely, the trace still draws complete
-        # rather than vanishing, which a base stroke-dashoffset would cause.
+        # The hidden state lives only inside the keyframes, and there is no
+        # fill mode: a renderer that never runs the animation — GitHub's image
+        # proxy, for one — must show the finished trace, not the empty first
+        # frame that a backwards fill would hold it at.
         self.css.append(
-            ".%s{animation:d%s 1.15s cubic-bezier(.4,0,.2,1) %ss both}"
+            ".%s{animation:d%s 1.15s cubic-bezier(.4,0,.2,1) %ss}"
             "@keyframes d%s{from{stroke-dasharray:%d;stroke-dashoffset:%d}"
             "to{stroke-dasharray:%d;stroke-dashoffset:0}}"
             % (cls, cls, delay, cls, length, length, length))
@@ -180,7 +181,7 @@ class Doc:
         if marker:
             fade = self.uid("fd")
             self.css.append(
-                ".%s{animation:f%s .4s ease-out %ss both}"
+                ".%s{animation:f%s .4s ease-out %ss}"
                 "@keyframes f%s{from{opacity:0}to{opacity:1}}"
                 % (fade, fade, round(delay + 1.1, 2), fade))
             self.add('<circle class="%s" cx="%.1f" cy="%.1f" r="2.1" '
@@ -202,7 +203,7 @@ class Doc:
         bw = max(1.6, slot * 0.62)
         cls = self.uid("bs")
         self.css.append(
-            ".%s{animation:g%s .5s ease-out both}"
+            ".%s{animation:g%s .5s ease-out}"
             "@keyframes g%s{from{opacity:0}to{opacity:1}}" % (cls, cls, cls))
         for i, v in enumerate(values):
             bh = max(min_h, h * v / float(hi)) if v else min_h * 0.8
