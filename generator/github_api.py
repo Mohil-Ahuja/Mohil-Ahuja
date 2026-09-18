@@ -8,6 +8,7 @@ import json
 import os
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 API = "https://api.github.com"
@@ -103,6 +104,48 @@ class Client:
                     "at": e.get("created_at", ""),
                 }
         return None
+
+    def authored_prs(self, login, cap=300):
+        """Every pull request this account has opened, newest first.
+
+        The search endpoint is the only one that spans repositories the user
+        does not own, which is the whole point: the interesting work is in
+        other people's codebases. Search has its own tighter rate limit, so a
+        failure here returns None and the caller falls back to the cache
+        rather than rendering an empty contribution ledger.
+        """
+        out, page = [], 1
+        while len(out) < cap:
+            payload = self.get(
+                "/search/issues?q=%s&per_page=100&page=%d&sort=created"
+                "&order=desc"
+                % (urllib.parse.quote("author:%s is:pr" % login), page))
+            if not isinstance(payload, dict):
+                return out or None
+            items = payload.get("items") or []
+            for it in items:
+                repo = "/".join(
+                    (it.get("repository_url") or "").split("/")[-2:])
+                if not repo or "/" not in repo:
+                    continue
+                pr = it.get("pull_request") or {}
+                merged = pr.get("merged_at")
+                out.append({
+                    "repo": repo,
+                    "org": repo.split("/")[0],
+                    "number": it.get("number"),
+                    "title": it.get("title", ""),
+                    "url": it.get("html_url", ""),
+                    "state": ("merged" if merged
+                              else "closed" if it.get("state") == "closed"
+                              else "open"),
+                    "created": (it.get("created_at") or "")[:10],
+                    "merged": (merged or "")[:10],
+                })
+            if len(items) < 100:
+                break
+            page += 1
+        return out
 
     def contributions(self, login):
         """53 weekly contribution totals via GraphQL.

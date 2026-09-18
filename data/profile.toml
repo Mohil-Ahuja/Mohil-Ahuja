@@ -77,19 +77,62 @@ caption = "co-founded · DPIIT-recognised · 500+ student pilot"
 stack   = "React Native · Node.js · MongoDB"
 note    = "moderation systems and analytics pipelines behind a campus super-app"
 
-[[project]]
-key     = "rl"
-title   = "rl-puzzle-agents"
-repo    = "vaibhavdabas16/candy-crush"
-href    = "https://github.com/vaibhavdabas16/candy-crush"
-status  = "done"
-value   = "3"
-unit    = "agents"
-caption = "PPO, GRPO and DQN benchmarked in a custom Gymnasium environment"
-stack   = "PyTorch · Gymnasium · reward shaping"
-note    = "same environment, same budget, three learning rules"
+# ---------------------------------------------------------------------------
+# Upstream organisations I send patches to. Everything about the contributions
+# themselves — counts, titles, what merged — is pulled live from the GitHub
+# API at build time; only the company context is declared here, because the
+# API does not know that browser-use is a YC company.
+#   badge : short funding or status marker, shown next to the name
+# ---------------------------------------------------------------------------
+
+[[org]]
+owner = "traceroot-ai"
+name  = "TraceRoot.AI"
+badge = "YC S25"
+what  = "observability for AI agents"
+
+[[org]]
+owner = "browser-use"
+name  = "Browser Use"
+badge = "YC W25"
+what  = "browser agents · 110K stars"
+
+[[org]]
+owner = "zitadel"
+name  = "Zitadel"
+badge = "identity"
+what  = "OIDC provider and login stack"
+
+[[org]]
+owner = "langfuse"
+name  = "Langfuse"
+badge = "YC W23"
+what  = "LLM engineering platform"
+
+[[org]]
+owner = "juspay"
+name  = "Hyperswitch"
+badge = "Series D"
+what  = "open source payment orchestration"
+
+[[org]]
+owner = "Arize-ai"
+name  = "Arize Phoenix"
+badge = "Series C"
+what  = "AI observability and evaluation"
+
+[[org]]
+owner = "mastra-ai"
+name  = "Mastra"
+badge = "YC W25"
+what  = "TypeScript agent framework"
 
 # ---------------------------------------------------------------------------
+
+[[secondary]]
+title = "rl-puzzle-agents"
+href  = "https://github.com/vaibhavdabas16/candy-crush"
+blurb = "PPO, GRPO and DQN benchmarked head to head in a custom Gymnasium environment"
 
 [[secondary]]
 title = "research-scout"

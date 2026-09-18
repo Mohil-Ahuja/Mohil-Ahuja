@@ -56,6 +56,11 @@ THEMES = (DARK, LIGHT)
 # JetBrains Mono advance width is 0.6 em.
 ADVANCE = 0.600
 
-def text_width(s, size):
-    """Exact rendered width, which only holds because the font is embedded."""
-    return len(s) * size * ADVANCE
+def text_width(s, size, tracking=0):
+    """Exact rendered width, which only holds because the font is embedded.
+
+    `tracking` must be passed whenever the text is drawn with letter-spacing:
+    SVG adds it after every glyph, so a tracked label is meaningfully wider
+    than its glyph advances, and anything positioned against it collides.
+    """
+    return len(s) * (size * ADVANCE + tracking)

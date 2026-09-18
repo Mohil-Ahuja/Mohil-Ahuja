@@ -62,6 +62,7 @@ def gather(conf, client, offline, cached=False):
         # Replay the last successful fetch. Useful when the unauthenticated
         # rate limit is exhausted but the committed output should still be
         # real rather than synthetic.
+        fresh = dict(cache)
         series = cache.get("series") or {}
         langs = cache.get("languages") or {}
         grand = sum(langs.values()) or 1
@@ -74,7 +75,8 @@ def gather(conf, client, offline, cached=False):
         for sv in series.values():
             for i, v in enumerate(sv[-52:]):
                 weeks[i] += v
-        return ident, stats, weeks, series, shares, last, cache
+        return (ident, stats, weeks, series, shares, last,
+                cache.get("prs") or [], fresh)
 
     if offline:
         contrib = synthetic(52, 7)
@@ -84,7 +86,8 @@ def gather(conf, client, offline, cached=False):
             fresh["series"][p["key"]] = (
                 synthetic(52, i + 3) if p["repo"] else [])
         shares = {c["label"]: 0.0 for c in conf["capability"]}
-        return ident, stats, contrib, fresh["series"], shares, None, fresh
+        return (ident, stats, contrib, fresh["series"], shares, None,
+                [], fresh)
 
     user = client.user(login)
     repos = client.repos(login)
@@ -98,22 +101,29 @@ def gather(conf, client, offline, cached=False):
         contrib, contrib_total = [], 0
 
     # --- per-project telemetry -------------------------------------------
-    series = {}
-    for p in conf["project"]:
-        s = client.commit_activity(p["repo"]) if p["repo"] else None
-        if not s:
-            s = (cache.get("series") or {}).get(p["key"]) or []
-        series[p["key"]] = s
-    fresh["series"] = series
-
+    # Only needed as a fallback for the hero trace now that the project tiles
+    # no longer draw commit bars, so it is fetched only when the contribution
+    # calendar was unavailable (an unauthenticated build, usually).
+    series = dict(cache.get("series") or {})
     if not contrib:
-        # Fallback: superimpose every repo's weekly commit counts.
+        for p in conf["project"]:
+            s = client.commit_activity(p["repo"]) if p["repo"] else None
+            if s:
+                series[p["key"]] = s
         weeks = [0] * 52
         for s in series.values():
             for i, v in enumerate(s[-52:]):
                 weeks[i] += v
         contrib = weeks
         contrib_total = sum(weeks)
+    fresh["series"] = series
+
+    # --- upstream pull requests ------------------------------------------
+    prs = client.authored_prs(login)
+    if prs is None:
+        prs = cache.get("prs") or []
+        client.warnings.append("pull request search unavailable; using cache")
+    fresh["prs"] = prs
 
     # --- language byte share ---------------------------------------------
     # Jupyter Notebook byte counts are dominated by base64 image output
@@ -144,7 +154,68 @@ def gather(conf, client, offline, cached=False):
     }
     fresh["stats"] = stats
     fresh["last"] = last
-    return ident, stats, contrib, series, shares, last, fresh
+    return ident, stats, contrib, series, shares, last, prs, fresh
+
+
+def oss_ledger(conf, prs):
+    """Fold the raw pull request list into what the page actually shows.
+
+    Returns (summary, rows, recent). `rows` is one entry per upstream
+    organisation, ordered by what merged rather than by what was opened:
+    anyone can open a pull request, so the merged count is the part that
+    carries information.
+    """
+    meta = {o["owner"].lower(): o for o in conf.get("org", [])}
+    mine = conf["identity"]["handle"].lower()
+
+    by_org, repos = {}, set()
+    merged = opened = closed = 0
+    for pr in prs:
+        org = pr["org"].lower()
+        # Own repositories are the projects section's job; this panel is about
+        # work accepted into codebases someone else maintains.
+        if org == mine:
+            continue
+        repos.add(pr["repo"])
+        slot = by_org.setdefault(org, {"merged": 0, "open": 0, "closed": 0})
+        slot[pr["state"]] += 1
+        if pr["state"] == "merged":
+            merged += 1
+        elif pr["state"] == "open":
+            opened += 1
+        else:
+            closed += 1
+
+    rows = []
+    for org, counts in by_org.items():
+        m = meta.get(org, {})
+        rows.append({
+            "owner": org,
+            "name": m.get("name", org),
+            "badge": m.get("badge", ""),
+            "what": m.get("what", ""),
+            "merged": counts["merged"],
+            "open": counts["open"],
+            "closed": counts["closed"],
+        })
+    rows.sort(key=lambda r: (-r["merged"], -(r["open"] + r["closed"]),
+                             r["name"]))
+
+    summary = {
+        "total": merged + opened + closed,
+        "merged": merged,
+        "open": opened,
+        "closed": closed,
+        "orgs": len(rows),
+        "repos": len(repos),
+    }
+
+    upstream = [p for p in prs if p["org"].lower() != mine]
+    recent = sorted((p for p in upstream if p["state"] == "merged"),
+                    key=lambda p: p["merged"], reverse=True)
+    review = sorted((p for p in upstream if p["state"] == "open"),
+                    key=lambda p: p["created"], reverse=True)
+    return summary, rows, {"merged": recent, "review": review}
 
 
 # ---------------------------------------------------------------------------
@@ -159,7 +230,7 @@ def write(name, content):
     return path
 
 
-def render_all(conf, ident, stats, contrib, series, shares):
+def render_all(conf, ident, stats, contrib, shares, summary, org_rows):
     written = []
     for t in THEMES:
         suffix = t["name"]
@@ -167,10 +238,12 @@ def render_all(conf, ident, stats, contrib, series, shares):
                              panels.hero(t, ident, stats, contrib)))
         written.append(write("capability-%s.svg" % suffix,
                              panels.capability(t, conf["capability"], shares)))
+        written.append(write("oss-%s.svg" % suffix,
+                             panels.contributions(t, summary, org_rows)))
         for p in conf["project"]:
             written.append(write(
                 "tile-%s-%s.svg" % (p["key"], suffix),
-                panels.tile(t, p, series.get(p["key"]))))
+                panels.tile(t, p)))
     return written
 
 
@@ -207,7 +280,7 @@ def picture(base, alt, width, ver):
             '</picture>' % (base, ver, alt, base, ver, width))
 
 
-def render_readme(conf, ident, last, ver, stamp):
+def render_readme(conf, ident, last, ver, stamp, summary, recent):
     tpl_path = os.path.join(ROOT, "generator", "templates", "README.tmpl.md")
     with open(tpl_path, encoding="utf-8") as f:
         tpl = f.read()
@@ -237,12 +310,52 @@ def render_readme(conf, ident, last, ver, stamp):
         "- **[%s](%s)** — %s" % (s["title"], s["href"], s["blurb"])
         for s in conf["secondary"])
 
-    if last and last.get("repo"):
-        current = ("`%s` — %s _(%s)_"
-                   % (last["repo"], last["message"] or "pushed",
-                      datestamp(last["at"])))
+    # "What am I on right now" is answered better by the newest upstream pull
+    # request than by the newest push: a push to a fork is usually a branch
+    # nobody has seen, while an open PR names the codebase, the problem, and
+    # the state it is in.
+    newest = max(recent["review"] + recent["merged"],
+                 key=lambda pr: (pr["created"], pr["number"]), default=None)
+    if newest:
+        current = ("**Currently** — in [`%s`](https://github.com/%s): "
+                   "[`#%s`](%s) %s, %s."
+                   % (newest["repo"], newest["repo"], newest["number"],
+                      newest["url"], newest["title"],
+                      "merged " + newest["merged"] if newest["state"] == "merged"
+                      else "opened " + newest["created"]))
+    elif last and last.get("repo"):
+        current = ("**Currently** — last push to [`%s`](https://github.com/%s)"
+                   " _(%s)_" % (last["repo"], last["repo"],
+                                datestamp(last["at"])))
     else:
-        current = "_no recent public push_"
+        current = "_no recent public activity_"
+
+    def pr_line(pr, stamp_key, label):
+        return ("- [`%s#%s`](%s) — %s _(%s %s)_"
+                % (pr["repo"], pr["number"], pr["url"], pr["title"],
+                   label, pr[stamp_key]))
+
+    show = int(conf.get("contributions", {}).get("show", 5))
+    merged_list = "\n".join(pr_line(pr, "merged", "merged")
+                            for pr in recent["merged"][:show])
+    review_list = "\n".join(pr_line(pr, "created", "opened")
+                            for pr in recent["review"][:show])
+    if not merged_list:
+        merged_list = "_nothing merged upstream yet_"
+    if not review_list:
+        review_list = "_nothing awaiting review_"
+
+    more_merged = max(0, len(recent["merged"]) - show)
+    more_review = max(0, len(recent["review"]) - show)
+    if more_merged:
+        merged_list += "\n- …and %d more merged upstream" % more_merged
+    if more_review:
+        review_list += "\n- …and %d more open" % more_review
+
+    headline = ("**%d pull requests** across **%d organisations** — "
+                "**%d merged upstream**, %d in review."
+                % (summary["total"], summary["orgs"], summary["merged"],
+                   summary["open"]))
 
     out = tpl
     for key, val in {
@@ -253,6 +366,13 @@ def render_readme(conf, ident, last, ver, stamp):
         "LEDGER": ledger,
         "SECONDARY": secondary,
         "CURRENT": current,
+        "OSS": picture("oss", "Open source contributions: %d pull requests "
+                              "across %d organisations, %d merged"
+                              % (summary["total"], summary["orgs"],
+                                 summary["merged"]), 880, ver),
+        "OSS_HEADLINE": headline,
+        "OSS_MERGED": merged_list,
+        "OSS_REVIEW": review_list,
         "EMAIL": ident["email"],
         "LINKEDIN": ident["linkedin"],
         "STAMP": stamp,
@@ -269,6 +389,7 @@ def render_preview(conf):
     def block(theme, bg, fg):
         parts = ['<div class="pane" style="background:%s;color:%s">' % (bg, fg)]
         parts.append('<img src="assets/hero-%s.svg" width="880">' % theme)
+        parts.append('<img src="assets/oss-%s.svg" width="880">' % theme)
         parts.append('<div class="grid">')
         for p in conf["project"]:
             parts.append('<img src="assets/tile-%s-%s.svg" width="428">'
@@ -305,17 +426,19 @@ def main():
 
     conf = load_conf()
     client = Client()
-    ident, stats, contrib, series, shares, last, fresh = gather(
+    ident, stats, contrib, series, shares, last, prs, fresh = gather(
         conf, client, args.offline, args.cached)
+    summary, org_rows, recent = oss_ledger(conf, prs)
 
-    written = render_all(conf, ident, stats, contrib, series, shares)
+    written = render_all(conf, ident, stats, contrib, shares, summary,
+                         org_rows)
 
     # The cache-busting token is a digest of what was actually rendered, not a
     # timestamp. An unchanged profile therefore produces a byte-identical
     # README, the scheduled run finds an empty diff, and no commit is made.
     ver = digest(written)
     stamp = touch_version(ver)
-    render_readme(conf, ident, last, ver, stamp)
+    render_readme(conf, ident, last, ver, stamp, summary, recent)
 
     if not args.offline and not args.cached:
         with open(CACHE, "w", encoding="utf-8") as f:
@@ -325,7 +448,8 @@ def main():
 
     for w in client.warnings:
         print("warn:", w, file=sys.stderr)
-    print("built %d assets, version %s" % (len(conf["project"]) * 2 + 4, ver))
+    print("built %d assets, version %s; %d PRs, %d merged upstream"
+          % (len(written), ver, summary["total"], summary["merged"]))
 
 
 if __name__ == "__main__":

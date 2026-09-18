@@ -17,6 +17,268 @@
   "message": "",
   "repo": "Mohil-Ahuja/browser-use"
  },
+ "prs": [
+  {
+   "created": "2026-09-17",
+   "merged": "",
+   "number": 12762,
+   "org": "zitadel",
+   "repo": "zitadel/zitadel",
+   "state": "open",
+   "title": "fix(login): keep Continue disabled while the passkey prompt is open",
+   "url": "https://github.com/zitadel/zitadel/pull/12762"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "",
+   "number": 12761,
+   "org": "zitadel",
+   "repo": "zitadel/zitadel",
+   "state": "open",
+   "title": "fix(login): accept any of the user's login names in password reset and login",
+   "url": "https://github.com/zitadel/zitadel/pull/12761"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "2026-09-18",
+   "number": 981,
+   "org": "zitadel",
+   "repo": "zitadel/oidc",
+   "state": "merged",
+   "title": "fix(op): escape the request id in the auth callback URL",
+   "url": "https://github.com/zitadel/oidc/pull/981"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "",
+   "number": 2221,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "feat(alerts): let the alert form set what an empty window means",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2221"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "",
+   "number": 2220,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "fix(billing): reconcile the subscription when checkout redirects back",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2220"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "",
+   "number": 2219,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "fix(billing): stop a subscribed workspace from starting a second checkout",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2219"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "",
+   "number": 2218,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "fix(billing): find the plan item by price, not by position",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2218"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "",
+   "number": 980,
+   "org": "zitadel",
+   "repo": "zitadel/oidc",
+   "state": "open",
+   "title": "fix(client): keep extra token response fields from the token endpoint",
+   "url": "https://github.com/zitadel/oidc/pull/980"
+  },
+  {
+   "created": "2026-09-17",
+   "merged": "2026-09-18",
+   "number": 979,
+   "org": "zitadel",
+   "repo": "zitadel/oidc",
+   "state": "merged",
+   "title": "fix(op): stop double-escaping fragment response parameters",
+   "url": "https://github.com/zitadel/oidc/pull/979"
+  },
+  {
+   "created": "2026-09-14",
+   "merged": "",
+   "number": 16176,
+   "org": "Arize-ai",
+   "repo": "Arize-ai/phoenix",
+   "state": "open",
+   "title": "fix(cost): score regex patterns that open with a group or end in an escaped dollar",
+   "url": "https://github.com/Arize-ai/phoenix/pull/16176"
+  },
+  {
+   "created": "2026-09-11",
+   "merged": "2026-09-17",
+   "number": 17347,
+   "org": "langfuse",
+   "repo": "langfuse/langfuse",
+   "state": "merged",
+   "title": "perf(tokenisation): drop the unicode pass that never changes its input",
+   "url": "https://github.com/langfuse/langfuse/pull/17347"
+  },
+  {
+   "created": "2026-09-11",
+   "merged": "",
+   "number": 23620,
+   "org": "mastra-ai",
+   "repo": "mastra-ai/mastra",
+   "state": "closed",
+   "title": "fix(otel-exporter): keep workflow step identity and branch attributes",
+   "url": "https://github.com/mastra-ai/mastra/pull/23620"
+  },
+  {
+   "created": "2026-09-11",
+   "merged": "",
+   "number": 17338,
+   "org": "langfuse",
+   "repo": "langfuse/langfuse",
+   "state": "open",
+   "title": "fix(tokenisation): count a tool call by its contents",
+   "url": "https://github.com/langfuse/langfuse/pull/17338"
+  },
+  {
+   "created": "2026-09-10",
+   "merged": "",
+   "number": 2164,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "fix(agent): decide a turn's meter per request, not per session",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2164"
+  },
+  {
+   "created": "2026-09-10",
+   "merged": "",
+   "number": 2162,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "fix(billing): meter detector scans that completed, not every attempt",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2162"
+  },
+  {
+   "created": "2026-09-10",
+   "merged": "",
+   "number": 2161,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "closed",
+   "title": "fix(pricing): price the six unpriced codex SKUs",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2161"
+  },
+  {
+   "created": "2026-09-06",
+   "merged": "",
+   "number": 5706,
+   "org": "browser-use",
+   "repo": "browser-use/browser-use",
+   "state": "open",
+   "title": "ci: run the platform-sensitive tests on Windows",
+   "url": "https://github.com/browser-use/browser-use/pull/5706"
+  },
+  {
+   "created": "2026-09-05",
+   "merged": "",
+   "number": 2125,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "fix(pricing): normalize gateway prefixes once instead of per catalogue entry",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2125"
+  },
+  {
+   "created": "2026-09-05",
+   "merged": "",
+   "number": 2124,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "open",
+   "title": "fix(agent): reclaim sandbox containers instead of leaking them",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2124"
+  },
+  {
+   "created": "2026-09-05",
+   "merged": "2026-09-08",
+   "number": 2123,
+   "org": "traceroot-ai",
+   "repo": "traceroot-ai/traceroot",
+   "state": "merged",
+   "title": "fix(pricing): correct gpt-5.6-terra rates and pin them to the published figures",
+   "url": "https://github.com/traceroot-ai/traceroot/pull/2123"
+  },
+  {
+   "created": "2026-09-05",
+   "merged": "",
+   "number": 5681,
+   "org": "browser-use",
+   "repo": "browser-use/browser-use",
+   "state": "open",
+   "title": "fix(llm): keep every system message in the Bedrock request",
+   "url": "https://github.com/browser-use/browser-use/pull/5681"
+  },
+  {
+   "created": "2026-09-03",
+   "merged": "2026-09-05",
+   "number": 5664,
+   "org": "browser-use",
+   "repo": "browser-use/browser-use",
+   "state": "merged",
+   "title": "fix(llm): stop dropping system messages in the Gemini request",
+   "url": "https://github.com/browser-use/browser-use/pull/5664"
+  },
+  {
+   "created": "2026-09-03",
+   "merged": "",
+   "number": 5663,
+   "org": "browser-use",
+   "repo": "browser-use/browser-use",
+   "state": "open",
+   "title": "fix(llm): keep every system message in the Anthropic request",
+   "url": "https://github.com/browser-use/browser-use/pull/5663"
+  },
+  {
+   "created": "2026-09-03",
+   "merged": "2026-09-04",
+   "number": 5662,
+   "org": "browser-use",
+   "repo": "browser-use/browser-use",
+   "state": "merged",
+   "title": "fix(agent): redact sensitive data nested below list boundaries in saved history",
+   "url": "https://github.com/browser-use/browser-use/pull/5662"
+  },
+  {
+   "created": "2026-08-19",
+   "merged": "",
+   "number": 13789,
+   "org": "juspay",
+   "repo": "juspay/hyperswitch",
+   "state": "open",
+   "title": "fix(router): report the captured amount on v2 split payment responses",
+   "url": "https://github.com/juspay/hyperswitch/pull/13789"
+  },
+  {
+   "created": "2026-08-16",
+   "merged": "",
+   "number": 13724,
+   "org": "juspay",
+   "repo": "juspay/hyperswitch",
+   "state": "open",
+   "title": "fix(hyperswitch_domain_models): include order_tax_amount in v2 net am\u2026",
+   "url": "https://github.com/juspay/hyperswitch/pull/13724"
+  }
+ ],
  "series": {
   "canopy": [
    5,
@@ -238,7 +500,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 450,
+  "contrib_total": 451,
   "last_push": "2026-09-17",
   "primary_lang": "Python",
   "repos": 37

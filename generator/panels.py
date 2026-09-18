@@ -8,7 +8,7 @@ from svg import Doc
 from theme import text_width
 
 HERO_W, HERO_H = 880, 264
-TILE_W, TILE_H = 428, 168
+TILE_W, TILE_H = 428, 140
 CAP_W, CAP_H = 880, 284
 
 STATUS = {
@@ -124,7 +124,7 @@ def _wrap(s, size, maxw):
 # Project tile
 # ---------------------------------------------------------------------------
 
-def tile(theme, p, series):
+def tile(theme, p):
     t = theme
     label, ckey = STATUS.get(p["status"], STATUS["done"])
     accent = t[ckey]
@@ -143,7 +143,7 @@ def tile(theme, p, series):
            fill=t["accent"])
     d.text(TILE_W - 16, 19.5, label, size=8.5, fill=t["secondary"],
            anchor="end", tracking=1.3)
-    d.led(TILE_W - 22 - text_width(label, 8.5) - 8, 15.5, accent,
+    d.led(TILE_W - 22 - text_width(label, 8.5, 1.3) - 6, 15.5, accent,
           live=(p["status"] == "live"), r=3.0)
 
     # headline metric
@@ -154,21 +154,117 @@ def tile(theme, p, series):
 
     d.text(16, 95, fit(p["caption"], 9.5, TILE_W - 32), size=9.5,
            fill=t["secondary"])
-    d.text(16, 111, fit(p["stack"], 9, TILE_W - 32), size=9, fill=t["dim"])
 
-    # full-bleed telemetry, kept quiet enough that the metric still leads
-    if series and len(series) > 2 and max(series) > 0:
-        d.text(16, 130, "WEEKLY ACTIVITY", size=7.5, fill=t["dim"], tracking=1.2)
-        d.text(TILE_W - 16, 130, "%d COMMITS · PEAK %d" % (sum(series), max(series)), size=7.5,
-               fill=t["dim"], anchor="end", tracking=1.2)
-        # The zero weeks already read as a baseline, so no extra rule.
-        d.bars(14, 136, TILE_W - 28, 30, series[-52:], accent, delay=0.25)
-    else:
-        d.text(16, 130, "WEEKLY ACTIVITY", size=7.5, fill=t["dim"],
-               tracking=1.2)
-        d.text(TILE_W - 16, 130, "SOURCE NOT PUBLIC", size=7.5, fill=t["dim"],
-               anchor="end", tracking=1.2)
-        d.line(14, 160, TILE_W - 14, 160, t["hairline"], 2, dash="2 5")
+    # Stack sits on its own rule at the foot of the card. The weekly commit
+    # bars that used to live here were mostly empty — a finished project
+    # commits nothing — so they read as neglect rather than as telemetry.
+    d.line(16, 108, TILE_W - 16, 108, t["hairline"], 1)
+    d.text(16, 124, fit(p["stack"], 9, TILE_W - 32), size=9, fill=t["dim"])
+
+    d.add("</g>")
+    return d.render()
+
+
+# ---------------------------------------------------------------------------
+# Open source contribution ledger
+# ---------------------------------------------------------------------------
+
+OSS_W = 880
+OSS_ROW = 38
+
+
+def oss_height(rows):
+    return 34 + 74 + max(1, rows) * OSS_ROW + 40
+
+
+def contributions(theme, summary, rows):
+    """Upstream work, grouped by organisation.
+
+    `rows` arrives sorted by the caller: merged first, because what landed is
+    the claim that survives scrutiny.
+    """
+    t = theme
+    h = oss_height(len(rows))
+    d = Doc(OSS_W, h, t, "Open source contributions",
+            "%d pull requests across %d organisations, %d merged."
+            % (summary["total"], summary["orgs"], summary["merged"]))
+
+    clip = d.panel(0.5, 0.5, OSS_W - 1, h - 1, r=10, header=34)
+    d.add('<g clip-path="url(#%s)">' % clip)
+
+    d.led(24, 17, t["ok"], live=True, r=3.0)
+    d.text(38, 21, "OPEN SOURCE", size=10.5, weight=700, fill=t["accent"],
+           tracking=1.6)
+    d.text(OSS_W - 24, 21, "LIVE FROM THE GITHUB API", size=8.5, fill=t["dim"],
+           anchor="end", tracking=1.2)
+
+    # --- headline counts --------------------------------------------------
+    stats = [
+        ("MERGED UPSTREAM", summary["merged"], t["ok"]),
+        ("IN REVIEW", summary["open"], t["accent"]),
+        ("ORGANISATIONS", summary["orgs"], t["text_bright"]),
+        ("REPOSITORIES", summary["repos"], t["text_bright"]),
+    ]
+    for i, (label, value, col) in enumerate(stats):
+        x = 24 + i * 214
+        d.text(x, 72, str(value), size=26, weight=700, fill=col)
+        d.text(x, 90, label, size=8.5, fill=t["dim"], tracking=1.3)
+
+    d.line(24, 104, OSS_W - 24, 104, t["hairline"], 1)
+
+    # --- per-organisation rows -------------------------------------------
+    widest = max((r["merged"] + r["open"]) for r in rows) if rows else 1
+    bar_x, bar_w = 520, 250
+
+    for i, r in enumerate(rows):
+        y = 132 + i * OSS_ROW
+
+        d.text(24, y, fit(r["name"], 11.5, 180), size=11.5, weight=700,
+               fill=t["text_bright"])
+
+        # Badge chip: funding stage or batch, the context the API cannot know.
+        if r.get("badge"):
+            bx = 24 + text_width(fit(r["name"], 11.5, 180), 11.5) + 10
+            bw = text_width(r["badge"], 8) + 14
+            d.rect(bx, y - 10, bw, 14, t["accent_soft"], r=7, opacity=0.5)
+            d.text(bx + 7, y, r["badge"], size=8, fill=t["accent"],
+                   tracking=0.6)
+
+        d.text(24, y + 14, fit(r.get("what", ""), 8.5, 460), size=8.5,
+               fill=t["dim"])
+
+        # Split bar: merged, then open, then closed, on one track so the three
+        # read as parts of the same total rather than competing quantities.
+        total = r["merged"] + r["open"] + r["closed"]
+        track = bar_w * total / float(widest or 1)
+        d.rect(bar_x, y - 8, bar_w, 6, t["border"], r=3, opacity=0.55)
+        if total:
+            mw = track * r["merged"] / float(total)
+            ow = track * r["open"] / float(total)
+            if mw > 0.5:
+                d.rect(bar_x, y - 8, mw, 6, t["ok"], r=3)
+            if ow > 0.5:
+                d.rect(bar_x + mw, y - 8, ow, 6, t["accent"], r=3,
+                       opacity=0.75)
+            if track - mw - ow > 0.5:
+                d.rect(bar_x + mw + ow, y - 8, track - mw - ow, 6,
+                       t["secondary"], r=3, opacity=0.4)
+
+        d.text(OSS_W - 24, y - 2, "%d merged" % r["merged"], size=9,
+               fill=t["ok"] if r["merged"] else t["dim"], anchor="end")
+        # A row with nothing open says something truer with its closed count
+        # than with a zero, so report whichever is the live fact.
+        second = ("%d in review" % r["open"] if r["open"]
+                  else "%d closed" % r["closed"] if r["closed"]
+                  else "no open work")
+        d.text(OSS_W - 24, y + 12, second, size=8.5, fill=t["dim"],
+               anchor="end")
+
+    d.line(24, h - 32, OSS_W - 24, h - 32, t["hairline"], 1)
+    d.text(24, h - 14,
+           "Every pull request ships with a regression test that fails when "
+           "the fix is reverted. Counts refresh with the rest of the page.",
+           size=8, fill=t["dim"])
 
     d.add("</g>")
     return d.render()
@@ -190,8 +286,7 @@ def capability(theme, caps, shares):
            tracking=1.6)
     # Legend keyed to the two marks, laid out right-to-left. Tracking has to
     # be included in the width or the swatches drift off the labels.
-    def tw(s_, size, track):
-        return len(s_) * (size * 0.6 + track)
+    tw = text_width
 
     cur = CAP_W - 24
     for lbl, col in (("SHARE OF PUBLIC CODE", t["data"]),

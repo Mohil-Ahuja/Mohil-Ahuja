@@ -8,17 +8,48 @@
 
 </div>
 
-I am a CS and AI undergraduate who mostly works on the parts of a system that
-are easy to claim and hard to prove — latency you have to measure at the tail,
-permissions you have to enforce rather than document, models you have to
-re-evaluate once the easy metric stops being the interesting one. I spent last
-summer in **Barclays' CISO Office** building data-quality and deployment
-automation, and I co-founded **UniEngage**, which is now on the App Store.
+I work on the parts of a system that are easy to claim and hard to prove —
+latency you have to measure at the tail, permissions you have to enforce rather
+than document, a wrong number that still renders as a working page. Lately that
+has mostly meant fixing other people's production code: {{OSS_HEADLINE}}
 
-The panels below are drawn from the GitHub API every six hours. The bars are
-weekly commit counts, not decoration, which is why some of them are mostly
-empty. Where a number is claimed, it was measured, and the method is written
-down in that project's README.
+Where a number appears below, it was measured, and the method is written down
+in that project's README.
+
+---
+
+## Open source
+
+<div align="center">
+
+{{OSS}}
+
+</div>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Merged upstream**
+
+{{OSS_MERGED}}
+
+</td>
+<td width="50%" valign="top">
+
+**In review now**
+
+{{OSS_REVIEW}}
+
+</td>
+</tr>
+</table>
+
+{{CURRENT}}
+
+---
+
+## Projects
 
 <div align="center">
 
@@ -32,24 +63,27 @@ down in that project's README.
 
 {{SECONDARY}}
 
+---
+
+## Capability
+
 <div align="center">
 
 {{CAPABILITY}}
 
 </div>
 
-### Ledger
+---
+
+## Ledger
 
 | | | |
 |:--|:--|:--|
 {{LEDGER}}
 
-### Currently
+---
 
-{{CURRENT}}
+[Email](mailto:{{EMAIL}}) · [LinkedIn]({{LINKEDIN}}) · India
 
-### Reach me
-
-[Email](mailto:{{EMAIL}}) · [LinkedIn]({{LINKEDIN}})
-
-<sub>Panels are rendered from live GitHub data every six hours. Output last changed {{STAMP}}.</sub>
+<sub>Contribution counts, panels and the lists above are rebuilt from the
+GitHub API every six hours. Output last changed {{STAMP}}.</sub>
