@@ -50,11 +50,11 @@
   },
   {
    "created": "2026-09-17",
-   "merged": "",
+   "merged": "2026-10-01",
    "number": 2221,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "open",
+   "state": "merged",
    "title": "feat(alerts): let the alert form set what an empty window means",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2221"
   },
@@ -500,7 +500,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 507,
+  "contrib_total": 511,
   "last_push": "2026-09-30",
   "primary_lang": "Python",
   "repos": 37
