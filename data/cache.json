@@ -19,6 +19,16 @@
  },
  "prs": [
   {
+   "created": "2026-10-02",
+   "merged": "",
+   "number": 6464,
+   "org": "canonical",
+   "repo": "canonical/snapcraft",
+   "state": "open",
+   "title": "fix(models): allow project variables in app commands",
+   "url": "https://github.com/canonical/snapcraft/pull/6464"
+  },
+  {
    "created": "2026-09-17",
    "merged": "",
    "number": 12762,
@@ -500,9 +510,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 514,
+  "contrib_total": 516,
   "last_push": "2026-09-30",
   "primary_lang": "Python",
-  "repos": 37
+  "repos": 38
  }
 }
