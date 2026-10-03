@@ -21,6 +21,16 @@
   {
    "created": "2026-10-02",
    "merged": "",
+   "number": 1024,
+   "org": "ClickHouse",
+   "repo": "ClickHouse/clickhouse-js",
+   "state": "open",
+   "title": "fix: export public API types from the client packages",
+   "url": "https://github.com/ClickHouse/clickhouse-js/pull/1024"
+  },
+  {
+   "created": "2026-10-02",
+   "merged": "",
    "number": 6464,
    "org": "canonical",
    "repo": "canonical/snapcraft",
@@ -510,9 +520,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 516,
+  "contrib_total": 521,
   "last_push": "2026-09-30",
   "primary_lang": "Python",
-  "repos": 38
+  "repos": 40
  }
 }
