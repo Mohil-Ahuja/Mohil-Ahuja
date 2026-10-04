@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=f3ba962bb8"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=f3ba962bb8" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=276217875b"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=276217875b" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **28 pull requests** across **9 organisations** — **9 merged upstream**, 17 in review.
+has mostly meant fixing other people's production code: **30 pull requests** across **11 organisations** — **9 merged upstream**, 19 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=f3ba962bb8"><img alt="Open source contributions: 28 pull requests across 9 organisations, 9 merged" src="assets/oss-light.svg?v=f3ba962bb8" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=276217875b"><img alt="Open source contributions: 30 pull requests across 11 organisations, 9 merged" src="assets/oss-light.svg?v=276217875b" width="880"></picture>
 
 </div>
 
@@ -44,18 +44,18 @@ in that project's README.
 
 **In review now**
 
+- [`ElementsProject/lightning#9598`](https://github.com/ElementsProject/lightning/pull/9598) — common: unescape the string form of param_string_or_array _(opened 2026-10-04)_
+- [`unikraft/unikraft#1917`](https://github.com/unikraft/unikraft/pull/1917) — drivers/xen/9pfront: Drop unreachable non-scheduler paths _(opened 2026-10-04)_
 - [`ClickHouse/clickhouse-js#1024`](https://github.com/ClickHouse/clickhouse-js/pull/1024) — fix: export public API types from the client packages _(opened 2026-10-02)_
 - [`canonical/snapcraft#6464`](https://github.com/canonical/snapcraft/pull/6464) — fix(models): allow project variables in app commands _(opened 2026-10-02)_
 - [`zitadel/zitadel#12762`](https://github.com/zitadel/zitadel/pull/12762) — fix(login): keep Continue disabled while the passkey prompt is open _(opened 2026-09-17)_
-- [`zitadel/zitadel#12761`](https://github.com/zitadel/zitadel/pull/12761) — fix(login): accept any of the user's login names in password reset and login _(opened 2026-09-17)_
-- [`traceroot-ai/traceroot#2220`](https://github.com/traceroot-ai/traceroot/pull/2220) — fix(billing): reconcile the subscription when checkout redirects back _(opened 2026-09-17)_
-- …and 12 more open
+- …and 14 more open
 
 </td>
 </tr>
 </table>
 
-**Currently** — in [`canonical/snapcraft`](https://github.com/canonical/snapcraft): [`#6464`](https://github.com/canonical/snapcraft/pull/6464) fix(models): allow project variables in app commands, opened 2026-10-02.
+**Currently** — in [`ElementsProject/lightning`](https://github.com/ElementsProject/lightning): [`#9598`](https://github.com/ElementsProject/lightning/pull/9598) common: unescape the string form of param_string_or_array, opened 2026-10-04.
 
 ---
 
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=f3ba962bb8"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=f3ba962bb8" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=f3ba962bb8"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=f3ba962bb8" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=f3ba962bb8"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=f3ba962bb8" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=f3ba962bb8"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=f3ba962bb8" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=f3ba962bb8"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=f3ba962bb8" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=276217875b"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=276217875b" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=276217875b"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=276217875b" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=276217875b"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=276217875b" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=276217875b"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=276217875b" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=276217875b"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=276217875b" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=f3ba962bb8"><img alt="Capability matrix" src="assets/capability-light.svg?v=f3ba962bb8" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=276217875b"><img alt="Capability matrix" src="assets/capability-light.svg?v=276217875b" width="880"></picture>
 
 </div>
 

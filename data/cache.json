@@ -19,6 +19,26 @@
  },
  "prs": [
   {
+   "created": "2026-10-04",
+   "merged": "",
+   "number": 9598,
+   "org": "ElementsProject",
+   "repo": "ElementsProject/lightning",
+   "state": "open",
+   "title": "common: unescape the string form of param_string_or_array",
+   "url": "https://github.com/ElementsProject/lightning/pull/9598"
+  },
+  {
+   "created": "2026-10-04",
+   "merged": "",
+   "number": 1917,
+   "org": "unikraft",
+   "repo": "unikraft/unikraft",
+   "state": "open",
+   "title": "drivers/xen/9pfront: Drop unreachable non-scheduler paths",
+   "url": "https://github.com/unikraft/unikraft/pull/1917"
+  },
+  {
    "created": "2026-10-02",
    "merged": "",
    "number": 1024,
@@ -520,9 +540,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 525,
+  "contrib_total": 530,
   "last_push": "2026-09-30",
   "primary_lang": "Python",
-  "repos": 40
+  "repos": 42
  }
 }
