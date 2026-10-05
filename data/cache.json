@@ -13,11 +13,41 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-09-30T05:09:33Z",
+  "at": "2026-10-05T13:23:12Z",
   "message": "",
-  "repo": "Mohil-Ahuja/traceroot"
+  "repo": "Mohil-Ahuja/oidc"
  },
  "prs": [
+  {
+   "created": "2026-10-05",
+   "merged": "",
+   "number": 996,
+   "org": "zitadel",
+   "repo": "zitadel/oidc",
+   "state": "open",
+   "title": "fix(rp): use a single client authentication method for device authorization",
+   "url": "https://github.com/zitadel/oidc/pull/996"
+  },
+  {
+   "created": "2026-10-05",
+   "merged": "",
+   "number": 1031,
+   "org": "ClickHouse",
+   "repo": "ClickHouse/clickhouse-js",
+   "state": "open",
+   "title": "fix: remove a trailing semicolon that is followed by a comment",
+   "url": "https://github.com/ClickHouse/clickhouse-js/pull/1031"
+  },
+  {
+   "created": "2026-10-05",
+   "merged": "",
+   "number": 2461,
+   "org": "jitsi",
+   "repo": "jitsi/jitsi-videobridge",
+   "state": "open",
+   "title": "fix: Remove expired non-visitor endpoints from speech activity",
+   "url": "https://github.com/jitsi/jitsi-videobridge/pull/2461"
+  },
   {
    "created": "2026-10-04",
    "merged": "",
@@ -40,11 +70,11 @@
   },
   {
    "created": "2026-10-02",
-   "merged": "",
+   "merged": "2026-10-05",
    "number": 1024,
    "org": "ClickHouse",
    "repo": "ClickHouse/clickhouse-js",
-   "state": "open",
+   "state": "merged",
    "title": "fix: export public API types from the client packages",
    "url": "https://github.com/ClickHouse/clickhouse-js/pull/1024"
   },
@@ -540,9 +570,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 532,
-  "last_push": "2026-09-30",
+  "contrib_total": 538,
+  "last_push": "2026-10-05",
   "primary_lang": "Python",
-  "repos": 42
+  "repos": 43
  }
 }
