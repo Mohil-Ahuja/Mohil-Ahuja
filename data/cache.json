@@ -13,18 +13,28 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-05T13:23:12Z",
+  "at": "2026-10-05T09:18:03Z",
   "message": "",
-  "repo": "Mohil-Ahuja/oidc"
+  "repo": "Mohil-Ahuja/traceroot"
  },
  "prs": [
   {
-   "created": "2026-10-05",
+   "created": "2026-10-06",
    "merged": "",
+   "number": 1918,
+   "org": "unikraft",
+   "repo": "unikraft/unikraft",
+   "state": "open",
+   "title": "lib/nolibc: Drop unreachable CONFIG_LIBNEWLIBC guard in timegm()",
+   "url": "https://github.com/unikraft/unikraft/pull/1918"
+  },
+  {
+   "created": "2026-10-05",
+   "merged": "2026-10-06",
    "number": 996,
    "org": "zitadel",
    "repo": "zitadel/oidc",
-   "state": "open",
+   "state": "merged",
    "title": "fix(rp): use a single client authentication method for device authorization",
    "url": "https://github.com/zitadel/oidc/pull/996"
   },
@@ -570,7 +580,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 540,
+  "contrib_total": 543,
   "last_push": "2026-10-05",
   "primary_lang": "Python",
   "repos": 43
