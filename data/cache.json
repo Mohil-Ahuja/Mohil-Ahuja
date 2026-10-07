@@ -13,11 +13,31 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-05T09:18:03Z",
+  "at": "2026-10-05T13:35:10Z",
   "message": "",
   "repo": "Mohil-Ahuja/traceroot"
  },
  "prs": [
+  {
+   "created": "2026-10-06",
+   "merged": "",
+   "number": 122,
+   "org": "unikraft",
+   "repo": "unikraft/catalog-core",
+   "state": "open",
+   "title": "bincompat-{java,rust}-hello: Select arch_prctl() from posix-process",
+   "url": "https://github.com/unikraft/catalog-core/pull/122"
+  },
+  {
+   "created": "2026-10-06",
+   "merged": "",
+   "number": 9604,
+   "org": "ElementsProject",
+   "repo": "ElementsProject/lightning",
+   "state": "open",
+   "title": "openingd: reject a peer dust_limit_satoshis below 354 sat",
+   "url": "https://github.com/ElementsProject/lightning/pull/9604"
+  },
   {
    "created": "2026-10-06",
    "merged": "",
@@ -580,9 +600,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 543,
+  "contrib_total": 547,
   "last_push": "2026-10-05",
   "primary_lang": "Python",
-  "repos": 43
+  "repos": 44
  }
 }
