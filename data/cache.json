@@ -13,11 +13,21 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-06T15:47:06Z",
+  "at": "2026-10-06T21:01:49Z",
   "message": "",
-  "repo": "Mohil-Ahuja/snapcraft"
+  "repo": "Mohil-Ahuja/lightning"
  },
  "prs": [
+  {
+   "created": "2026-10-07",
+   "merged": "",
+   "number": 365,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "open",
+   "title": "ChannelCreateDestroyMonitor: track liveness per channel, not per peer",
+   "url": "https://github.com/ksedgwic/clboss/pull/365"
+  },
   {
    "created": "2026-10-06",
    "merged": "",
@@ -600,9 +610,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 548,
+  "contrib_total": 550,
   "last_push": "2026-10-06",
   "primary_lang": "Python",
-  "repos": 44
+  "repos": 45
  }
 }

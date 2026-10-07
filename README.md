@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=0b1bd3ac1f"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=0b1bd3ac1f" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=77d2baac79"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=77d2baac79" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **36 pull requests** across **12 organisations** — **11 merged upstream**, 23 in review.
+has mostly meant fixing other people's production code: **37 pull requests** across **13 organisations** — **11 merged upstream**, 24 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=0b1bd3ac1f"><img alt="Open source contributions: 36 pull requests across 12 organisations, 11 merged" src="assets/oss-light.svg?v=0b1bd3ac1f" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=77d2baac79"><img alt="Open source contributions: 37 pull requests across 13 organisations, 11 merged" src="assets/oss-light.svg?v=77d2baac79" width="880"></picture>
 
 </div>
 
@@ -44,18 +44,18 @@ in that project's README.
 
 **In review now**
 
+- [`ksedgwic/clboss#365`](https://github.com/ksedgwic/clboss/pull/365) — ChannelCreateDestroyMonitor: track liveness per channel, not per peer _(opened 2026-10-07)_
 - [`unikraft/catalog-core#122`](https://github.com/unikraft/catalog-core/pull/122) — bincompat-{java,rust}-hello: Select arch_prctl() from posix-process _(opened 2026-10-06)_
 - [`ElementsProject/lightning#9604`](https://github.com/ElementsProject/lightning/pull/9604) — openingd: reject a peer dust_limit_satoshis below 354 sat _(opened 2026-10-06)_
 - [`unikraft/unikraft#1918`](https://github.com/unikraft/unikraft/pull/1918) — lib/nolibc: Drop unreachable CONFIG_LIBNEWLIBC guard in timegm() _(opened 2026-10-06)_
 - [`ClickHouse/clickhouse-js#1031`](https://github.com/ClickHouse/clickhouse-js/pull/1031) — fix: remove a trailing semicolon that is followed by a comment _(opened 2026-10-05)_
-- [`jitsi/jitsi-videobridge#2461`](https://github.com/jitsi/jitsi-videobridge/pull/2461) — fix: Remove expired non-visitor endpoints from speech activity _(opened 2026-10-05)_
-- …and 18 more open
+- …and 19 more open
 
 </td>
 </tr>
 </table>
 
-**Currently** — in [`ElementsProject/lightning`](https://github.com/ElementsProject/lightning): [`#9604`](https://github.com/ElementsProject/lightning/pull/9604) openingd: reject a peer dust_limit_satoshis below 354 sat, opened 2026-10-06.
+**Currently** — in [`ksedgwic/clboss`](https://github.com/ksedgwic/clboss): [`#365`](https://github.com/ksedgwic/clboss/pull/365) ChannelCreateDestroyMonitor: track liveness per channel, not per peer, opened 2026-10-07.
 
 ---
 
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=0b1bd3ac1f"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=0b1bd3ac1f" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=0b1bd3ac1f"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=0b1bd3ac1f" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=0b1bd3ac1f"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=0b1bd3ac1f" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=0b1bd3ac1f"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=0b1bd3ac1f" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=0b1bd3ac1f"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=0b1bd3ac1f" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=77d2baac79"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=77d2baac79" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=77d2baac79"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=77d2baac79" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=77d2baac79"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=77d2baac79" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=77d2baac79"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=77d2baac79" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=77d2baac79"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=77d2baac79" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=0b1bd3ac1f"><img alt="Capability matrix" src="assets/capability-light.svg?v=0b1bd3ac1f" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=77d2baac79"><img alt="Capability matrix" src="assets/capability-light.svg?v=77d2baac79" width="880"></picture>
 
 </div>
 
