@@ -13,11 +13,51 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-06T21:01:49Z",
+  "at": "2026-10-08T21:08:06Z",
   "message": "",
-  "repo": "Mohil-Ahuja/lightning"
+  "repo": "Mohil-Ahuja/clboss"
  },
  "prs": [
+  {
+   "created": "2026-10-08",
+   "merged": "",
+   "number": 1921,
+   "org": "unikraft",
+   "repo": "unikraft/unikraft",
+   "state": "open",
+   "title": "drivers: Check the CPU limit before writing per-CPU vars",
+   "url": "https://github.com/unikraft/unikraft/pull/1921"
+  },
+  {
+   "created": "2026-10-08",
+   "merged": "",
+   "number": 369,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "open",
+   "title": "PeerComplaintsDesk: close each channel of a multi-channel peer",
+   "url": "https://github.com/ksedgwic/clboss/pull/369"
+  },
+  {
+   "created": "2026-10-08",
+   "merged": "",
+   "number": 368,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "open",
+   "title": "FeeModderByBalance: sum the balance over the peer's live channels",
+   "url": "https://github.com/ksedgwic/clboss/pull/368"
+  },
+  {
+   "created": "2026-10-08",
+   "merged": "2026-10-08",
+   "number": 367,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "merged",
+   "title": "ChannelCreateDestroyMonitor: reconcile peers by the monitor's own rule",
+   "url": "https://github.com/ksedgwic/clboss/pull/367"
+  },
   {
    "created": "2026-10-07",
    "merged": "",
@@ -610,8 +650,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 553,
-  "last_push": "2026-10-06",
+  "contrib_total": 554,
+  "last_push": "2026-10-08",
   "primary_lang": "Python",
   "repos": 45
  }
