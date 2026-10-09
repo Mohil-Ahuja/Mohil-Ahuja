@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=0549e8bf52"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=0549e8bf52" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=77b7d8eadf"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=77b7d8eadf" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **41 pull requests** across **13 organisations** — **12 merged upstream**, 27 in review.
+has mostly meant fixing other people's production code: **44 pull requests** across **16 organisations** — **12 merged upstream**, 30 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=0549e8bf52"><img alt="Open source contributions: 41 pull requests across 13 organisations, 12 merged" src="assets/oss-light.svg?v=0549e8bf52" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=77b7d8eadf"><img alt="Open source contributions: 44 pull requests across 16 organisations, 12 merged" src="assets/oss-light.svg?v=77b7d8eadf" width="880"></picture>
 
 </div>
 
@@ -44,18 +44,18 @@ in that project's README.
 
 **In review now**
 
+- [`ENTERPILOT/GoModel#1156`](https://github.com/ENTERPILOT/GoModel/pull/1156) — fix(providers): honor allowed_tools on Responses for chat-bridged providers _(opened 2026-10-09)_
+- [`kenn-io/msgvault#1198`](https://github.com/kenn-io/msgvault/pull/1198) — fix(dedup): prefer a copy without Apple Mail placeholders as survivor _(opened 2026-10-09)_
+- [`lakekeeper/lakekeeper#2104`](https://github.com/lakekeeper/lakekeeper/pull/2104) — fix(signer): exclude unsigned headers regardless of name case _(opened 2026-10-09)_
 - [`unikraft/unikraft#1921`](https://github.com/unikraft/unikraft/pull/1921) — drivers: Check the CPU limit before writing per-CPU vars _(opened 2026-10-08)_
 - [`ksedgwic/clboss#369`](https://github.com/ksedgwic/clboss/pull/369) — PeerComplaintsDesk: close each channel of a multi-channel peer _(opened 2026-10-08)_
-- [`ksedgwic/clboss#368`](https://github.com/ksedgwic/clboss/pull/368) — FeeModderByBalance: sum the balance over the peer's live channels _(opened 2026-10-08)_
-- [`ksedgwic/clboss#365`](https://github.com/ksedgwic/clboss/pull/365) — ChannelCreateDestroyMonitor: track liveness per channel, not per peer _(opened 2026-10-07)_
-- [`unikraft/catalog-core#122`](https://github.com/unikraft/catalog-core/pull/122) — bincompat-{java,rust}-hello: Select arch_prctl() from posix-process _(opened 2026-10-06)_
-- …and 22 more open
+- …and 25 more open
 
 </td>
 </tr>
 </table>
 
-**Currently** — in [`unikraft/unikraft`](https://github.com/unikraft/unikraft): [`#1921`](https://github.com/unikraft/unikraft/pull/1921) drivers: Check the CPU limit before writing per-CPU vars, opened 2026-10-08.
+**Currently** — in [`lakekeeper/lakekeeper`](https://github.com/lakekeeper/lakekeeper): [`#2104`](https://github.com/lakekeeper/lakekeeper/pull/2104) fix(signer): exclude unsigned headers regardless of name case, opened 2026-10-09.
 
 ---
 
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=0549e8bf52"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=0549e8bf52" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=0549e8bf52"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=0549e8bf52" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=0549e8bf52"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=0549e8bf52" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=0549e8bf52"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=0549e8bf52" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=0549e8bf52"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=0549e8bf52" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=77b7d8eadf"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=77b7d8eadf" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=77b7d8eadf"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=77b7d8eadf" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=77b7d8eadf"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=77b7d8eadf" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=77b7d8eadf"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=77b7d8eadf" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=77b7d8eadf"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=77b7d8eadf" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=0549e8bf52"><img alt="Capability matrix" src="assets/capability-light.svg?v=0549e8bf52" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=77b7d8eadf"><img alt="Capability matrix" src="assets/capability-light.svg?v=77b7d8eadf" width="880"></picture>
 
 </div>
 

@@ -19,6 +19,36 @@
  },
  "prs": [
   {
+   "created": "2026-10-09",
+   "merged": "",
+   "number": 1156,
+   "org": "ENTERPILOT",
+   "repo": "ENTERPILOT/GoModel",
+   "state": "open",
+   "title": "fix(providers): honor allowed_tools on Responses for chat-bridged providers",
+   "url": "https://github.com/ENTERPILOT/GoModel/pull/1156"
+  },
+  {
+   "created": "2026-10-09",
+   "merged": "",
+   "number": 1198,
+   "org": "kenn-io",
+   "repo": "kenn-io/msgvault",
+   "state": "open",
+   "title": "fix(dedup): prefer a copy without Apple Mail placeholders as survivor",
+   "url": "https://github.com/kenn-io/msgvault/pull/1198"
+  },
+  {
+   "created": "2026-10-09",
+   "merged": "",
+   "number": 2104,
+   "org": "lakekeeper",
+   "repo": "lakekeeper/lakekeeper",
+   "state": "open",
+   "title": "fix(signer): exclude unsigned headers regardless of name case",
+   "url": "https://github.com/lakekeeper/lakekeeper/pull/2104"
+  },
+  {
    "created": "2026-10-08",
    "merged": "",
    "number": 1921,
@@ -650,9 +680,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 559,
+  "contrib_total": 567,
   "last_push": "2026-10-08",
   "primary_lang": "Python",
-  "repos": 45
+  "repos": 48
  }
 }
