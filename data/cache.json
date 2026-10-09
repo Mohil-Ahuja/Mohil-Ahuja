@@ -13,11 +13,31 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-08T21:08:06Z",
+  "at": "2026-10-09T14:57:02Z",
   "message": "",
-  "repo": "Mohil-Ahuja/clboss"
+  "repo": "Mohil-Ahuja/GoModel"
  },
  "prs": [
+  {
+   "created": "2026-10-09",
+   "merged": "",
+   "number": 371,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "open",
+   "title": "ActiveProber: probe through the peer's channel with the most to spend",
+   "url": "https://github.com/ksedgwic/clboss/pull/371"
+  },
+  {
+   "created": "2026-10-09",
+   "merged": "",
+   "number": 2105,
+   "org": "kodustech",
+   "repo": "kodustech/kodus-ai",
+   "state": "open",
+   "title": "fix(scripts): run the env generator without a shell in env:check",
+   "url": "https://github.com/kodustech/kodus-ai/pull/2105"
+  },
   {
    "created": "2026-10-09",
    "merged": "",
@@ -90,11 +110,11 @@
   },
   {
    "created": "2026-10-07",
-   "merged": "",
+   "merged": "2026-10-09",
    "number": 365,
    "org": "ksedgwic",
    "repo": "ksedgwic/clboss",
-   "state": "open",
+   "state": "merged",
    "title": "ChannelCreateDestroyMonitor: track liveness per channel, not per peer",
    "url": "https://github.com/ksedgwic/clboss/pull/365"
   },
@@ -680,9 +700,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 567,
-  "last_push": "2026-10-08",
+  "contrib_total": 573,
+  "last_push": "2026-10-09",
   "primary_lang": "Python",
-  "repos": 48
+  "repos": 49
  }
 }

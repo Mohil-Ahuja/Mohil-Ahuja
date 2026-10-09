@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=77b7d8eadf"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=77b7d8eadf" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=6de2bcb49b"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=6de2bcb49b" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **44 pull requests** across **16 organisations** — **12 merged upstream**, 30 in review.
+has mostly meant fixing other people's production code: **46 pull requests** across **17 organisations** — **13 merged upstream**, 31 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=77b7d8eadf"><img alt="Open source contributions: 44 pull requests across 16 organisations, 12 merged" src="assets/oss-light.svg?v=77b7d8eadf" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=6de2bcb49b"><img alt="Open source contributions: 46 pull requests across 17 organisations, 13 merged" src="assets/oss-light.svg?v=6de2bcb49b" width="880"></picture>
 
 </div>
 
@@ -32,30 +32,30 @@ in that project's README.
 
 **Merged upstream**
 
+- [`ksedgwic/clboss#365`](https://github.com/ksedgwic/clboss/pull/365) — ChannelCreateDestroyMonitor: track liveness per channel, not per peer _(merged 2026-10-09)_
 - [`ksedgwic/clboss#367`](https://github.com/ksedgwic/clboss/pull/367) — ChannelCreateDestroyMonitor: reconcile peers by the monitor's own rule _(merged 2026-10-08)_
 - [`zitadel/oidc#996`](https://github.com/zitadel/oidc/pull/996) — fix(rp): use a single client authentication method for device authorization _(merged 2026-10-06)_
 - [`ClickHouse/clickhouse-js#1024`](https://github.com/ClickHouse/clickhouse-js/pull/1024) — fix: export public API types from the client packages _(merged 2026-10-05)_
 - [`traceroot-ai/traceroot#2221`](https://github.com/traceroot-ai/traceroot/pull/2221) — feat(alerts): let the alert form set what an empty window means _(merged 2026-10-01)_
-- [`zitadel/oidc#980`](https://github.com/zitadel/oidc/pull/980) — fix(client): keep extra token response fields from the token endpoint _(merged 2026-09-29)_
-- …and 7 more merged upstream
+- …and 8 more merged upstream
 
 </td>
 <td width="50%" valign="top">
 
 **In review now**
 
+- [`ksedgwic/clboss#371`](https://github.com/ksedgwic/clboss/pull/371) — ActiveProber: probe through the peer's channel with the most to spend _(opened 2026-10-09)_
+- [`kodustech/kodus-ai#2105`](https://github.com/kodustech/kodus-ai/pull/2105) — fix(scripts): run the env generator without a shell in env:check _(opened 2026-10-09)_
 - [`ENTERPILOT/GoModel#1156`](https://github.com/ENTERPILOT/GoModel/pull/1156) — fix(providers): honor allowed_tools on Responses for chat-bridged providers _(opened 2026-10-09)_
 - [`kenn-io/msgvault#1198`](https://github.com/kenn-io/msgvault/pull/1198) — fix(dedup): prefer a copy without Apple Mail placeholders as survivor _(opened 2026-10-09)_
 - [`lakekeeper/lakekeeper#2104`](https://github.com/lakekeeper/lakekeeper/pull/2104) — fix(signer): exclude unsigned headers regardless of name case _(opened 2026-10-09)_
-- [`unikraft/unikraft#1921`](https://github.com/unikraft/unikraft/pull/1921) — drivers: Check the CPU limit before writing per-CPU vars _(opened 2026-10-08)_
-- [`ksedgwic/clboss#369`](https://github.com/ksedgwic/clboss/pull/369) — PeerComplaintsDesk: close each channel of a multi-channel peer _(opened 2026-10-08)_
-- …and 25 more open
+- …and 26 more open
 
 </td>
 </tr>
 </table>
 
-**Currently** — in [`lakekeeper/lakekeeper`](https://github.com/lakekeeper/lakekeeper): [`#2104`](https://github.com/lakekeeper/lakekeeper/pull/2104) fix(signer): exclude unsigned headers regardless of name case, opened 2026-10-09.
+**Currently** — in [`kodustech/kodus-ai`](https://github.com/kodustech/kodus-ai): [`#2105`](https://github.com/kodustech/kodus-ai/pull/2105) fix(scripts): run the env generator without a shell in env:check, opened 2026-10-09.
 
 ---
 
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=77b7d8eadf"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=77b7d8eadf" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=77b7d8eadf"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=77b7d8eadf" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=77b7d8eadf"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=77b7d8eadf" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=77b7d8eadf"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=77b7d8eadf" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=77b7d8eadf"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=77b7d8eadf" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=6de2bcb49b"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=6de2bcb49b" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=6de2bcb49b"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=6de2bcb49b" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=6de2bcb49b"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=6de2bcb49b" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=6de2bcb49b"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=6de2bcb49b" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=6de2bcb49b"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=6de2bcb49b" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=77b7d8eadf"><img alt="Capability matrix" src="assets/capability-light.svg?v=77b7d8eadf" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=6de2bcb49b"><img alt="Capability matrix" src="assets/capability-light.svg?v=6de2bcb49b" width="880"></picture>
 
 </div>
 
