@@ -13,11 +13,51 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-09T12:42:49Z",
+  "at": "2026-10-10T19:50:56Z",
   "message": "",
-  "repo": "Mohil-Ahuja/msgvault"
+  "repo": "Mohil-Ahuja/traceroot"
  },
  "prs": [
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 6915,
+   "org": "assimp",
+   "repo": "assimp/assimp",
+   "state": "open",
+   "title": "Importer: reject scenes without a root node",
+   "url": "https://github.com/assimp/assimp/pull/6915"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 6914,
+   "org": "assimp",
+   "repo": "assimp/assimp",
+   "state": "open",
+   "title": "LWS: fail the import when the version line is missing",
+   "url": "https://github.com/assimp/assimp/pull/6914"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 6913,
+   "org": "assimp",
+   "repo": "assimp/assimp",
+   "state": "open",
+   "title": "ASE: don't free the material index when dropping an empty mesh",
+   "url": "https://github.com/assimp/assimp/pull/6913"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "2026-10-10",
+   "number": 6911,
+   "org": "assimp",
+   "repo": "assimp/assimp",
+   "state": "merged",
+   "title": "FBX: decode negative polygon vertex indices without overflow",
+   "url": "https://github.com/assimp/assimp/pull/6911"
+  },
   {
    "created": "2026-10-10",
    "merged": "",
@@ -800,9 +840,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 601,
-  "last_push": "2026-10-09",
+  "contrib_total": 604,
+  "last_push": "2026-10-10",
   "primary_lang": "Python",
-  "repos": 58
+  "repos": 59
  }
 }
