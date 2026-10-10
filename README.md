@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=6de2bcb49b"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=6de2bcb49b" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=383b7fc3c7"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=383b7fc3c7" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **46 pull requests** across **17 organisations** — **13 merged upstream**, 31 in review.
+has mostly meant fixing other people's production code: **50 pull requests** across **21 organisations** — **13 merged upstream**, 35 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=6de2bcb49b"><img alt="Open source contributions: 46 pull requests across 17 organisations, 13 merged" src="assets/oss-light.svg?v=6de2bcb49b" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=383b7fc3c7"><img alt="Open source contributions: 50 pull requests across 21 organisations, 13 merged" src="assets/oss-light.svg?v=383b7fc3c7" width="880"></picture>
 
 </div>
 
@@ -44,18 +44,18 @@ in that project's README.
 
 **In review now**
 
+- [`boostsecurityio/poutine#460`](https://github.com/boostsecurityio/poutine/pull/460) — fix(rules): check major and minor action refs against the latest release in their line _(opened 2026-10-10)_
+- [`fencesandbox/fence#238`](https://github.com/fencesandbox/fence/pull/238) — perf: expand all "**/" patterns in one walk of cwd _(opened 2026-10-10)_
+- [`codemod/codemod#2438`](https://github.com/codemod/codemod/pull/2438) — fix(runners): run Windows run steps as a batch file _(opened 2026-10-10)_
+- [`hookdeck/outpost#1143`](https://github.com/hookdeck/outpost/pull/1143) — fix: reject NUL bytes and invalid UTF-8 in text parameters with a 400 _(opened 2026-10-10)_
 - [`ksedgwic/clboss#371`](https://github.com/ksedgwic/clboss/pull/371) — ActiveProber: probe through the peer's channel with the most to spend _(opened 2026-10-09)_
-- [`kodustech/kodus-ai#2105`](https://github.com/kodustech/kodus-ai/pull/2105) — fix(scripts): run the env generator without a shell in env:check _(opened 2026-10-09)_
-- [`ENTERPILOT/GoModel#1156`](https://github.com/ENTERPILOT/GoModel/pull/1156) — fix(providers): honor allowed_tools on Responses for chat-bridged providers _(opened 2026-10-09)_
-- [`kenn-io/msgvault#1198`](https://github.com/kenn-io/msgvault/pull/1198) — fix(dedup): prefer a copy without Apple Mail placeholders as survivor _(opened 2026-10-09)_
-- [`lakekeeper/lakekeeper#2104`](https://github.com/lakekeeper/lakekeeper/pull/2104) — fix(signer): exclude unsigned headers regardless of name case _(opened 2026-10-09)_
-- …and 26 more open
+- …and 30 more open
 
 </td>
 </tr>
 </table>
 
-**Currently** — in [`kodustech/kodus-ai`](https://github.com/kodustech/kodus-ai): [`#2105`](https://github.com/kodustech/kodus-ai/pull/2105) fix(scripts): run the env generator without a shell in env:check, opened 2026-10-09.
+**Currently** — in [`codemod/codemod`](https://github.com/codemod/codemod): [`#2438`](https://github.com/codemod/codemod/pull/2438) fix(runners): run Windows run steps as a batch file, opened 2026-10-10.
 
 ---
 
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=6de2bcb49b"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=6de2bcb49b" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=6de2bcb49b"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=6de2bcb49b" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=6de2bcb49b"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=6de2bcb49b" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=6de2bcb49b"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=6de2bcb49b" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=6de2bcb49b"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=6de2bcb49b" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=383b7fc3c7"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=383b7fc3c7" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=383b7fc3c7"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=383b7fc3c7" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=383b7fc3c7"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=383b7fc3c7" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=383b7fc3c7"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=383b7fc3c7" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=383b7fc3c7"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=383b7fc3c7" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=6de2bcb49b"><img alt="Capability matrix" src="assets/capability-light.svg?v=6de2bcb49b" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=383b7fc3c7"><img alt="Capability matrix" src="assets/capability-light.svg?v=383b7fc3c7" width="880"></picture>
 
 </div>
 
@@ -106,4 +106,4 @@ in that project's README.
 [Email](mailto:mohilahuja@gmail.com) · [LinkedIn](https://www.linkedin.com/in/mohil-ahuja-ba559722b/) · India
 
 <sub>Contribution counts, panels and the lists above are rebuilt from the
-GitHub API every six hours. Output last changed 2026-10-09.</sub>
+GitHub API every six hours. Output last changed 2026-10-10.</sub>

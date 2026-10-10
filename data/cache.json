@@ -13,11 +13,51 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-09T14:57:02Z",
+  "at": "2026-10-09T21:51:10Z",
   "message": "",
   "repo": "Mohil-Ahuja/GoModel"
  },
  "prs": [
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 460,
+   "org": "boostsecurityio",
+   "repo": "boostsecurityio/poutine",
+   "state": "open",
+   "title": "fix(rules): check major and minor action refs against the latest release in their line",
+   "url": "https://github.com/boostsecurityio/poutine/pull/460"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 238,
+   "org": "fencesandbox",
+   "repo": "fencesandbox/fence",
+   "state": "open",
+   "title": "perf: expand all \"**/\" patterns in one walk of cwd",
+   "url": "https://github.com/fencesandbox/fence/pull/238"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 2438,
+   "org": "codemod",
+   "repo": "codemod/codemod",
+   "state": "open",
+   "title": "fix(runners): run Windows run steps as a batch file",
+   "url": "https://github.com/codemod/codemod/pull/2438"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 1143,
+   "org": "hookdeck",
+   "repo": "hookdeck/outpost",
+   "state": "open",
+   "title": "fix: reject NUL bytes and invalid UTF-8 in text parameters with a 400",
+   "url": "https://github.com/hookdeck/outpost/pull/1143"
+  },
   {
    "created": "2026-10-09",
    "merged": "",
@@ -700,9 +740,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 573,
+  "contrib_total": 584,
   "last_push": "2026-10-09",
   "primary_lang": "Python",
-  "repos": 49
+  "repos": 53
  }
 }
