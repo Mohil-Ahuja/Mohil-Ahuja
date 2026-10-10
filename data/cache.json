@@ -13,11 +13,71 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-09T21:51:10Z",
+  "at": "2026-10-09T12:42:49Z",
   "message": "",
-  "repo": "Mohil-Ahuja/GoModel"
+  "repo": "Mohil-Ahuja/msgvault"
  },
  "prs": [
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 434,
+   "org": "vstakhov",
+   "repo": "vstakhov/libucl",
+   "state": "open",
+   "title": "Reject cyclic $ref in schema validation",
+   "url": "https://github.com/vstakhov/libucl/pull/434"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 2839,
+   "org": "eclipse-zenoh",
+   "repo": "eclipse-zenoh/zenoh",
+   "state": "open",
+   "title": "fix(keyexpr): intersect without recursion",
+   "url": "https://github.com/eclipse-zenoh/zenoh/pull/2839"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 2838,
+   "org": "eclipse-zenoh",
+   "repo": "eclipse-zenoh/zenoh",
+   "state": "open",
+   "title": "fix: split resource suffixes on a char boundary",
+   "url": "https://github.com/eclipse-zenoh/zenoh/pull/2838"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 3651,
+   "org": "h2o",
+   "repo": "h2o/h2o",
+   "state": "open",
+   "title": "qpack: reject over-long literals on the encoder stream instead of asserting",
+   "url": "https://github.com/h2o/h2o/pull/3651"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 1832,
+   "org": "lz4",
+   "repo": "lz4/lz4",
+   "state": "open",
+   "title": "ossfuzz: check cstreamHC after LZ4_createStreamHC() in the stream fuzzer",
+   "url": "https://github.com/lz4/lz4/pull/1832"
+  },
+  {
+   "created": "2026-10-10",
+   "merged": "",
+   "number": 13394,
+   "org": "tarantool",
+   "repo": "tarantool/tarantool",
+   "state": "open",
+   "title": "box: check the key part count before the np/pp collation check",
+   "url": "https://github.com/tarantool/tarantool/pull/13394"
+  },
   {
    "created": "2026-10-10",
    "merged": "",
@@ -394,7 +454,7 @@
    "number": 2164,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "open",
+   "state": "closed",
    "title": "fix(agent): decide a turn's meter per request, not per session",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2164"
   },
@@ -504,7 +564,7 @@
    "number": 13789,
    "org": "juspay",
    "repo": "juspay/hyperswitch",
-   "state": "open",
+   "state": "closed",
    "title": "fix(router): report the captured amount on v2 split payment responses",
    "url": "https://github.com/juspay/hyperswitch/pull/13789"
   },
@@ -514,7 +574,7 @@
    "number": 13724,
    "org": "juspay",
    "repo": "juspay/hyperswitch",
-   "state": "open",
+   "state": "closed",
    "title": "fix(hyperswitch_domain_models): include order_tax_amount in v2 net am\u2026",
    "url": "https://github.com/juspay/hyperswitch/pull/13724"
   }
@@ -740,9 +800,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 584,
+  "contrib_total": 601,
   "last_push": "2026-10-09",
   "primary_lang": "Python",
-  "repos": 53
+  "repos": 58
  }
 }
