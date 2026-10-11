@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=ecd058a7e8"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=ecd058a7e8" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=220846c084"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=220846c084" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **60 pull requests** across **27 organisations** — **15 merged upstream**, 40 in review.
+has mostly meant fixing other people's production code: **60 pull requests** across **27 organisations** — **16 merged upstream**, 39 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=ecd058a7e8"><img alt="Open source contributions: 60 pull requests across 27 organisations, 15 merged" src="assets/oss-light.svg?v=ecd058a7e8" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=220846c084"><img alt="Open source contributions: 60 pull requests across 27 organisations, 16 merged" src="assets/oss-light.svg?v=220846c084" width="880"></picture>
 
 </div>
 
@@ -32,12 +32,12 @@ in that project's README.
 
 **Merged upstream**
 
+- [`ENTERPILOT/GoModel#1156`](https://github.com/ENTERPILOT/GoModel/pull/1156) — fix(providers): honor allowed_tools on Responses for chat-bridged providers _(merged 2026-10-11)_
 - [`assimp/assimp#6914`](https://github.com/assimp/assimp/pull/6914) — LWS: fail the import when the version line is missing _(merged 2026-10-10)_
 - [`assimp/assimp#6911`](https://github.com/assimp/assimp/pull/6911) — FBX: decode negative polygon vertex indices without overflow _(merged 2026-10-10)_
 - [`ksedgwic/clboss#365`](https://github.com/ksedgwic/clboss/pull/365) — ChannelCreateDestroyMonitor: track liveness per channel, not per peer _(merged 2026-10-09)_
 - [`ksedgwic/clboss#367`](https://github.com/ksedgwic/clboss/pull/367) — ChannelCreateDestroyMonitor: reconcile peers by the monitor's own rule _(merged 2026-10-08)_
-- [`zitadel/oidc#996`](https://github.com/zitadel/oidc/pull/996) — fix(rp): use a single client authentication method for device authorization _(merged 2026-10-06)_
-- …and 10 more merged upstream
+- …and 11 more merged upstream
 
 </td>
 <td width="50%" valign="top">
@@ -49,7 +49,7 @@ in that project's README.
 - [`vstakhov/libucl#434`](https://github.com/vstakhov/libucl/pull/434) — Reject cyclic $ref in schema validation _(opened 2026-10-10)_
 - [`eclipse-zenoh/zenoh#2839`](https://github.com/eclipse-zenoh/zenoh/pull/2839) — fix(keyexpr): intersect without recursion _(opened 2026-10-10)_
 - [`eclipse-zenoh/zenoh#2838`](https://github.com/eclipse-zenoh/zenoh/pull/2838) — fix: split resource suffixes on a char boundary _(opened 2026-10-10)_
-- …and 35 more open
+- …and 34 more open
 
 </td>
 </tr>
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=ecd058a7e8"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=ecd058a7e8" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=ecd058a7e8"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=ecd058a7e8" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=ecd058a7e8"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=ecd058a7e8" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=ecd058a7e8"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=ecd058a7e8" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=ecd058a7e8"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=ecd058a7e8" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=220846c084"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=220846c084" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=220846c084"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=220846c084" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=220846c084"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=220846c084" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=220846c084"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=220846c084" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=220846c084"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=220846c084" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=ecd058a7e8"><img alt="Capability matrix" src="assets/capability-light.svg?v=ecd058a7e8" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=220846c084"><img alt="Capability matrix" src="assets/capability-light.svg?v=220846c084" width="880"></picture>
 
 </div>
 

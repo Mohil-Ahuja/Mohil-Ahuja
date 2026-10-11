@@ -13,9 +13,9 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-09T15:33:45Z",
+  "at": "2026-10-10T04:06:07Z",
   "message": "",
-  "repo": "Mohil-Ahuja/msgvault"
+  "repo": "Mohil-Ahuja/GoModel"
  },
  "prs": [
   {
@@ -180,11 +180,11 @@
   },
   {
    "created": "2026-10-09",
-   "merged": "",
+   "merged": "2026-10-11",
    "number": 1156,
    "org": "ENTERPILOT",
    "repo": "ENTERPILOT/GoModel",
-   "state": "open",
+   "state": "merged",
    "title": "fix(providers): honor allowed_tools on Responses for chat-bridged providers",
    "url": "https://github.com/ENTERPILOT/GoModel/pull/1156"
   },
@@ -840,8 +840,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 611,
-  "last_push": "2026-10-09",
+  "contrib_total": 612,
+  "last_push": "2026-10-10",
   "primary_lang": "Python",
   "repos": 59
  }
