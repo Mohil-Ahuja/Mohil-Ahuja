@@ -13,9 +13,9 @@
   "TypeScript": 7709
  },
  "last": {
-  "at": "2026-10-10T19:50:56Z",
+  "at": "2026-10-10T20:32:48Z",
   "message": "",
-  "repo": "Mohil-Ahuja/traceroot"
+  "repo": "Mohil-Ahuja/clboss"
  },
  "prs": [
   {
@@ -30,11 +30,11 @@
   },
   {
    "created": "2026-10-10",
-   "merged": "",
+   "merged": "2026-10-10",
    "number": 6914,
    "org": "assimp",
    "repo": "assimp/assimp",
-   "state": "open",
+   "state": "merged",
    "title": "LWS: fail the import when the version line is missing",
    "url": "https://github.com/assimp/assimp/pull/6914"
   },
@@ -840,7 +840,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 604,
+  "contrib_total": 610,
   "last_push": "2026-10-10",
   "primary_lang": "Python",
   "repos": 59
