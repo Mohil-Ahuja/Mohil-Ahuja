@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=fca63ab058"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=fca63ab058" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=da6cf50499"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=da6cf50499" width="880"></picture>
 
 </div>
 
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=fca63ab058"><img alt="Open source contributions: 60 pull requests across 27 organisations, 16 merged" src="assets/oss-light.svg?v=fca63ab058" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=da6cf50499"><img alt="Open source contributions: 60 pull requests across 27 organisations, 16 merged" src="assets/oss-light.svg?v=da6cf50499" width="880"></picture>
 
 </div>
 
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=fca63ab058"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=fca63ab058" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=fca63ab058"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=fca63ab058" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=fca63ab058"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=fca63ab058" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=fca63ab058"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=fca63ab058" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=fca63ab058"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=fca63ab058" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=da6cf50499"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=da6cf50499" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=da6cf50499"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=da6cf50499" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=da6cf50499"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=da6cf50499" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=da6cf50499"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=da6cf50499" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=da6cf50499"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=da6cf50499" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=fca63ab058"><img alt="Capability matrix" src="assets/capability-light.svg?v=fca63ab058" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=da6cf50499"><img alt="Capability matrix" src="assets/capability-light.svg?v=da6cf50499" width="880"></picture>
 
 </div>
 
