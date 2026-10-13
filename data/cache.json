@@ -13,11 +13,21 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-13T10:12:29Z",
+  "at": "2026-10-13T20:36:57Z",
   "message": "",
-  "repo": "Mohil-Ahuja/lakekeeper"
+  "repo": "Mohil-Ahuja/codemod"
  },
  "prs": [
+  {
+   "created": "2026-10-13",
+   "merged": "",
+   "number": 6934,
+   "org": "assimp",
+   "repo": "assimp/assimp",
+   "state": "open",
+   "title": "OpenGEX test: import files that end inside a property value",
+   "url": "https://github.com/assimp/assimp/pull/6934"
+  },
   {
    "created": "2026-10-13",
    "merged": "",
@@ -64,7 +74,7 @@
    "number": 6918,
    "org": "assimp",
    "repo": "assimp/assimp",
-   "state": "open",
+   "state": "closed",
    "title": "OpenDDL: check for the end of the buffer before reading in the token helpers",
    "url": "https://github.com/assimp/assimp/pull/6918"
   },
@@ -100,11 +110,11 @@
   },
   {
    "created": "2026-10-10",
-   "merged": "",
+   "merged": "2026-10-13",
    "number": 6913,
    "org": "assimp",
    "repo": "assimp/assimp",
-   "state": "open",
+   "state": "merged",
    "title": "ASE: don't free the material index when dropping an empty mesh",
    "url": "https://github.com/assimp/assimp/pull/6913"
   },
@@ -900,7 +910,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 645,
+  "contrib_total": 648,
   "last_push": "2026-10-13",
   "primary_lang": "Python",
   "repos": 60
