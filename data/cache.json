@@ -13,11 +13,21 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-12T11:53:22Z",
+  "at": "2026-10-14T09:39:42Z",
   "message": "",
-  "repo": "Mohil-Ahuja/traceroot"
+  "repo": "Mohil-Ahuja/codemod"
  },
  "prs": [
+  {
+   "created": "2026-10-14",
+   "merged": "",
+   "number": 2447,
+   "org": "codemod",
+   "repo": "codemod/codemod",
+   "state": "open",
+   "title": "fix(core): resolve local nested codemod sources from the declaring package",
+   "url": "https://github.com/codemod/codemod/pull/2447"
+  },
   {
    "created": "2026-10-13",
    "merged": "",
@@ -210,11 +220,11 @@
   },
   {
    "created": "2026-10-10",
-   "merged": "",
+   "merged": "2026-10-14",
    "number": 2438,
    "org": "codemod",
    "repo": "codemod/codemod",
-   "state": "open",
+   "state": "merged",
    "title": "fix(runners): run Windows run steps as a batch file",
    "url": "https://github.com/codemod/codemod/pull/2438"
   },
@@ -910,8 +920,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 651,
-  "last_push": "2026-10-12",
+  "contrib_total": 654,
+  "last_push": "2026-10-14",
   "primary_lang": "Python",
   "repos": 60
  }
