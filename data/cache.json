@@ -13,7 +13,7 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-13T22:34:57Z",
+  "at": "2026-10-14T08:50:32Z",
   "message": "",
   "repo": "Mohil-Ahuja/codemod"
  },
@@ -160,11 +160,11 @@
   },
   {
    "created": "2026-10-10",
-   "merged": "",
+   "merged": "2026-10-15",
    "number": 2838,
    "org": "eclipse-zenoh",
    "repo": "eclipse-zenoh/zenoh",
-   "state": "open",
+   "state": "merged",
    "title": "fix: split resource suffixes on a char boundary",
    "url": "https://github.com/eclipse-zenoh/zenoh/pull/2838"
   },
@@ -920,8 +920,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 658,
-  "last_push": "2026-10-13",
+  "contrib_total": 660,
+  "last_push": "2026-10-14",
   "primary_lang": "Python",
   "repos": 60
  }
