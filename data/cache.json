@@ -274,7 +274,7 @@
    "number": 1198,
    "org": "kenn-io",
    "repo": "kenn-io/msgvault",
-   "state": "open",
+   "state": "closed",
    "title": "fix(dedup): prefer a copy without Apple Mail placeholders as survivor",
    "url": "https://github.com/kenn-io/msgvault/pull/1198"
   },
@@ -624,7 +624,7 @@
    "number": 2124,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "closed",
+   "state": "open",
    "title": "fix(agent): reclaim sandbox containers instead of leaking them",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2124"
   },
@@ -920,7 +920,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 660,
+  "contrib_total": 661,
   "last_push": "2026-10-14",
   "primary_lang": "Python",
   "repos": 60
