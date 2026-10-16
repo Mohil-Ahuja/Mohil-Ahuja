@@ -174,7 +174,7 @@
    "number": 3651,
    "org": "h2o",
    "repo": "h2o/h2o",
-   "state": "open",
+   "state": "closed",
    "title": "qpack: reject over-long literals on the encoder stream instead of asserting",
    "url": "https://github.com/h2o/h2o/pull/3651"
   },
@@ -920,7 +920,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 661,
+  "contrib_total": 662,
   "last_push": "2026-10-14",
   "primary_lang": "Python",
   "repos": 60
