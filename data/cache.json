@@ -13,9 +13,9 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-14T08:50:32Z",
+  "at": "2026-10-15T20:47:31Z",
   "message": "",
-  "repo": "Mohil-Ahuja/codemod"
+  "repo": "Mohil-Ahuja/traceroot"
  },
  "prs": [
   {
@@ -620,11 +620,11 @@
   },
   {
    "created": "2026-09-05",
-   "merged": "",
+   "merged": "2026-10-16",
    "number": 2124,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "open",
+   "state": "merged",
    "title": "fix(agent): reclaim sandbox containers instead of leaking them",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2124"
   },
@@ -920,8 +920,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 662,
-  "last_push": "2026-10-14",
+  "contrib_total": 668,
+  "last_push": "2026-10-15",
   "primary_lang": "Python",
   "repos": 60
  }
