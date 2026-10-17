@@ -484,7 +484,7 @@
    "number": 2220,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "closed",
+   "state": "open",
    "title": "fix(billing): reconcile the subscription when checkout redirects back",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2220"
   },
@@ -494,7 +494,7 @@
    "number": 2219,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "closed",
+   "state": "open",
    "title": "fix(billing): stop a subscribed workspace from starting a second checkout",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2219"
   },
@@ -504,7 +504,7 @@
    "number": 2218,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "closed",
+   "state": "open",
    "title": "fix(billing): find the plan item by price, not by position",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2218"
   },
@@ -614,7 +614,7 @@
    "number": 2125,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "closed",
+   "state": "open",
    "title": "fix(pricing): normalize gateway prefixes once instead of per catalogue entry",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2125"
   },
@@ -920,7 +920,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 670,
+  "contrib_total": 671,
   "last_push": "2026-10-15",
   "primary_lang": "Python",
   "repos": 60
