@@ -13,11 +13,51 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-15T14:32:21Z",
+  "at": "2026-10-16T07:37:38Z",
   "message": "",
-  "repo": "Mohil-Ahuja/zenoh"
+  "repo": "Mohil-Ahuja/traceroot"
  },
  "prs": [
+  {
+   "created": "2026-10-17",
+   "merged": "",
+   "number": 2139,
+   "org": "lakekeeper",
+   "repo": "lakekeeper/lakekeeper",
+   "state": "open",
+   "title": "feat(storage): optionally add a principal to the STS session policy",
+   "url": "https://github.com/lakekeeper/lakekeeper/pull/2139"
+  },
+  {
+   "created": "2026-10-17",
+   "merged": "",
+   "number": 418,
+   "org": "modelence",
+   "repo": "modelence/modelence",
+   "state": "open",
+   "title": "fix(auth): revoke a user's other reset links when the password is reset",
+   "url": "https://github.com/modelence/modelence/pull/418"
+  },
+  {
+   "created": "2026-10-17",
+   "merged": "",
+   "number": 803,
+   "org": "s2-streamstore",
+   "repo": "s2-streamstore/s2",
+   "state": "closed",
+   "title": "fix(cli): compare a stream with its basin's inherited storage class in diff",
+   "url": "https://github.com/s2-streamstore/s2/pull/803"
+  },
+  {
+   "created": "2026-10-17",
+   "merged": "",
+   "number": 802,
+   "org": "s2-streamstore",
+   "repo": "s2-streamstore/s2",
+   "state": "closed",
+   "title": "fix(cli): resolve omitted storage class on both sides in apply dry-run",
+   "url": "https://github.com/s2-streamstore/s2/pull/802"
+  },
   {
    "created": "2026-10-14",
    "merged": "",
@@ -920,9 +960,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 671,
-  "last_push": "2026-10-15",
+  "contrib_total": 679,
+  "last_push": "2026-10-16",
   "primary_lang": "Python",
-  "repos": 60
+  "repos": 63
  }
 }
