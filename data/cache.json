@@ -19,6 +19,26 @@
  },
  "prs": [
   {
+   "created": "2026-10-19",
+   "merged": "",
+   "number": 1355,
+   "org": "c-ares",
+   "repo": "c-ares/c-ares",
+   "state": "closed",
+   "title": "ares_inet_pton: only succeed for a complete address",
+   "url": "https://github.com/c-ares/c-ares/pull/1355"
+  },
+  {
+   "created": "2026-10-19",
+   "merged": "",
+   "number": 2801,
+   "org": "lakehq",
+   "repo": "lakehq/sail",
+   "state": "open",
+   "title": "fix: reset the current namespace when switching catalogs",
+   "url": "https://github.com/lakehq/sail/pull/2801"
+  },
+  {
    "created": "2026-10-17",
    "merged": "",
    "number": 2139,
@@ -230,11 +250,11 @@
   },
   {
    "created": "2026-10-10",
-   "merged": "",
+   "merged": "2026-10-19",
    "number": 13394,
    "org": "tarantool",
    "repo": "tarantool/tarantool",
-   "state": "open",
+   "state": "merged",
    "title": "box: check the key part count before the np/pp collation check",
    "url": "https://github.com/tarantool/tarantool/pull/13394"
   },
@@ -960,9 +980,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 682,
+  "contrib_total": 688,
   "last_push": "2026-10-17",
   "primary_lang": "Python",
-  "repos": 63
+  "repos": 65
  }
 }
