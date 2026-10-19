@@ -13,11 +13,21 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-17T03:11:46Z",
+  "at": "2026-10-19T10:46:35Z",
   "message": "",
-  "repo": "Mohil-Ahuja/traceroot"
+  "repo": "Mohil-Ahuja/sail"
  },
  "prs": [
+  {
+   "created": "2026-10-19",
+   "merged": "",
+   "number": 433,
+   "org": "topoteretes",
+   "repo": "topoteretes/cognee-community",
+   "state": "open",
+   "title": "feat(connector): add Grafana Loki data-source connector",
+   "url": "https://github.com/topoteretes/cognee-community/pull/433"
+  },
   {
    "created": "2026-10-19",
    "merged": "",
@@ -80,11 +90,11 @@
   },
   {
    "created": "2026-10-14",
-   "merged": "",
+   "merged": "2026-10-19",
    "number": 2447,
    "org": "codemod",
    "repo": "codemod/codemod",
-   "state": "open",
+   "state": "merged",
    "title": "fix(core): resolve local nested codemod sources from the declaring package",
    "url": "https://github.com/codemod/codemod/pull/2447"
   },
@@ -980,9 +990,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 688,
-  "last_push": "2026-10-17",
+  "contrib_total": 690,
+  "last_push": "2026-10-19",
   "primary_lang": "Python",
-  "repos": 65
+  "repos": 66
  }
 }
