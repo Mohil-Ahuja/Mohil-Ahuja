@@ -570,11 +570,11 @@
   },
   {
    "created": "2026-09-17",
-   "merged": "",
+   "merged": "2026-10-20",
    "number": 2218,
    "org": "traceroot-ai",
    "repo": "traceroot-ai/traceroot",
-   "state": "open",
+   "state": "merged",
    "title": "fix(billing): find the plan item by price, not by position",
    "url": "https://github.com/traceroot-ai/traceroot/pull/2218"
   },
@@ -990,7 +990,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 690,
+  "contrib_total": 694,
   "last_push": "2026-10-19",
   "primary_lang": "Python",
   "repos": 66
