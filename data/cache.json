@@ -13,9 +13,9 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-20T18:46:19Z",
+  "at": "2026-10-21T20:50:33Z",
   "message": "",
-  "repo": "Mohil-Ahuja/sail"
+  "repo": "Mohil-Ahuja/clickhouse-js"
  },
  "prs": [
   {
@@ -990,8 +990,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 700,
-  "last_push": "2026-10-20",
+  "contrib_total": 701,
+  "last_push": "2026-10-21",
   "primary_lang": "Python",
   "repos": 66
  }
