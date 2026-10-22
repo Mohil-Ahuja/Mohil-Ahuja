@@ -13,7 +13,7 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-22T02:12:56Z",
+  "at": "2026-10-22T09:46:28Z",
   "message": "",
   "repo": "Mohil-Ahuja/sail"
  },
@@ -50,11 +50,11 @@
   },
   {
    "created": "2026-10-17",
-   "merged": "",
+   "merged": "2026-10-22",
    "number": 2139,
    "org": "lakekeeper",
    "repo": "lakekeeper/lakekeeper",
-   "state": "open",
+   "state": "merged",
    "title": "feat(storage): optionally add a principal to the STS session policy",
    "url": "https://github.com/lakekeeper/lakekeeper/pull/2139"
   },
@@ -990,7 +990,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 702,
+  "contrib_total": 703,
   "last_push": "2026-10-22",
   "primary_lang": "Python",
   "repos": 66

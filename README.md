@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=b64cf538b6"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=b64cf538b6" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=126379a8b9"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=126379a8b9" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **75 pull requests** across **32 organisations** — **27 merged upstream**, 30 in review.
+has mostly meant fixing other people's production code: **75 pull requests** across **32 organisations** — **28 merged upstream**, 29 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=b64cf538b6"><img alt="Open source contributions: 75 pull requests across 32 organisations, 27 merged" src="assets/oss-light.svg?v=b64cf538b6" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=126379a8b9"><img alt="Open source contributions: 75 pull requests across 32 organisations, 28 merged" src="assets/oss-light.svg?v=126379a8b9" width="880"></picture>
 
 </div>
 
@@ -32,12 +32,12 @@ in that project's README.
 
 **Merged upstream**
 
+- [`lakekeeper/lakekeeper#2139`](https://github.com/lakekeeper/lakekeeper/pull/2139) — feat(storage): optionally add a principal to the STS session policy _(merged 2026-10-22)_
 - [`traceroot-ai/traceroot#2218`](https://github.com/traceroot-ai/traceroot/pull/2218) — fix(billing): find the plan item by price, not by position _(merged 2026-10-20)_
 - [`codemod/codemod#2447`](https://github.com/codemod/codemod/pull/2447) — fix(core): resolve local nested codemod sources from the declaring package _(merged 2026-10-19)_
 - [`tarantool/tarantool#13394`](https://github.com/tarantool/tarantool/pull/13394) — box: check the key part count before the np/pp collation check _(merged 2026-10-19)_
 - [`traceroot-ai/traceroot#2124`](https://github.com/traceroot-ai/traceroot/pull/2124) — fix(agent): reclaim sandbox containers instead of leaking them _(merged 2026-10-16)_
-- [`eclipse-zenoh/zenoh#2838`](https://github.com/eclipse-zenoh/zenoh/pull/2838) — fix: split resource suffixes on a char boundary _(merged 2026-10-15)_
-- …and 22 more merged upstream
+- …and 23 more merged upstream
 
 </td>
 <td width="50%" valign="top">
@@ -46,10 +46,10 @@ in that project's README.
 
 - [`topoteretes/cognee-community#433`](https://github.com/topoteretes/cognee-community/pull/433) — feat(connector): add Grafana Loki data-source connector _(opened 2026-10-19)_
 - [`lakehq/sail#2801`](https://github.com/lakehq/sail/pull/2801) — fix: reset the current namespace when switching catalogs _(opened 2026-10-19)_
-- [`lakekeeper/lakekeeper#2139`](https://github.com/lakekeeper/lakekeeper/pull/2139) — feat(storage): optionally add a principal to the STS session policy _(opened 2026-10-17)_
 - [`modelence/modelence#418`](https://github.com/modelence/modelence/pull/418) — fix(auth): revoke a user's other reset links when the password is reset _(opened 2026-10-17)_
 - [`assimp/assimp#6934`](https://github.com/assimp/assimp/pull/6934) — OpenGEX test: import files that end inside a property value _(opened 2026-10-13)_
-- …and 25 more open
+- [`lakekeeper/lakekeeper#2116`](https://github.com/lakekeeper/lakekeeper/pull/2116) — feat(io): read small objects without a HEAD on S3 and ADLS _(opened 2026-10-13)_
+- …and 24 more open
 
 </td>
 </tr>
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=b64cf538b6"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=b64cf538b6" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=b64cf538b6"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=b64cf538b6" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=b64cf538b6"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=b64cf538b6" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=b64cf538b6"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=b64cf538b6" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=b64cf538b6"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=b64cf538b6" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=126379a8b9"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=126379a8b9" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=126379a8b9"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=126379a8b9" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=126379a8b9"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=126379a8b9" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=126379a8b9"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=126379a8b9" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=126379a8b9"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=126379a8b9" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=b64cf538b6"><img alt="Capability matrix" src="assets/capability-light.svg?v=b64cf538b6" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=126379a8b9"><img alt="Capability matrix" src="assets/capability-light.svg?v=126379a8b9" width="880"></picture>
 
 </div>
 
