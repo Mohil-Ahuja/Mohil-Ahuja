@@ -130,11 +130,11 @@
   },
   {
    "created": "2026-10-12",
-   "merged": "",
+   "merged": "2026-10-23",
    "number": 6920,
    "org": "assimp",
    "repo": "assimp/assimp",
-   "state": "open",
+   "state": "merged",
    "title": "3MF: skip non-triangle faces when exporting triangles",
    "url": "https://github.com/assimp/assimp/pull/6920"
   },
@@ -990,7 +990,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 706,
+  "contrib_total": 708,
   "last_push": "2026-10-22",
   "primary_lang": "Python",
   "repos": 66
