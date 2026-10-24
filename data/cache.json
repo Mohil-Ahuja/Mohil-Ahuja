@@ -13,11 +13,21 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-24T08:25:47Z",
+  "at": "2026-10-24T12:58:34Z",
   "message": "",
-  "repo": "Mohil-Ahuja/sail"
+  "repo": "Mohil-Ahuja/traceroot"
  },
  "prs": [
+  {
+   "created": "2026-10-24",
+   "merged": "",
+   "number": 10690,
+   "org": "tursodatabase",
+   "repo": "tursodatabase/turso",
+   "state": "open",
+   "title": "core/mvcc: undo only the conflicting write in a shared autocommit transaction",
+   "url": "https://github.com/tursodatabase/turso/pull/10690"
+  },
   {
    "created": "2026-10-23",
    "merged": "",
@@ -1000,7 +1010,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 715,
+  "contrib_total": 716,
   "last_push": "2026-10-24",
   "primary_lang": "Python",
   "repos": 67
