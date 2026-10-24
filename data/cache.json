@@ -13,11 +13,21 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-21T07:08:59Z",
+  "at": "2026-10-24T01:08:26Z",
   "message": "",
-  "repo": "Mohil-Ahuja/sail"
+  "repo": "Mohil-Ahuja/traceroot"
  },
  "prs": [
+  {
+   "created": "2026-10-23",
+   "merged": "",
+   "number": 378,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "open",
+   "title": "clboss-channel-sizing: read pre-0.17.3 samples against the channel they describe",
+   "url": "https://github.com/ksedgwic/clboss/pull/378"
+  },
   {
    "created": "2026-10-19",
    "merged": "",
@@ -990,8 +1000,8 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 710,
-  "last_push": "2026-10-21",
+  "contrib_total": 712,
+  "last_push": "2026-10-24",
   "primary_lang": "Python",
   "repos": 66
  }
