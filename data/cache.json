@@ -13,11 +13,21 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-10-25T13:20:10Z",
+  "at": "2026-10-26T08:41:16Z",
   "message": "",
-  "repo": "Mohil-Ahuja/lakekeeper"
+  "repo": "Mohil-Ahuja/sail"
  },
  "prs": [
+  {
+   "created": "2026-10-26",
+   "merged": "",
+   "number": 626,
+   "org": "onecli",
+   "repo": "onecli/onecli",
+   "state": "open",
+   "title": "fix(gitlab): cover GET /api/v4/user with a read tool so whoami isn't blocked",
+   "url": "https://github.com/onecli/onecli/pull/626"
+  },
   {
    "created": "2026-10-24",
    "merged": "",
@@ -1010,9 +1020,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 722,
-  "last_push": "2026-10-25",
+  "contrib_total": 727,
+  "last_push": "2026-10-26",
   "primary_lang": "Python",
-  "repos": 67
+  "repos": 70
  }
 }
