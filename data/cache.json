@@ -21,6 +21,16 @@
   {
    "created": "2026-10-26",
    "merged": "",
+   "number": 379,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "open",
+   "title": "ConnectFinderByHardcode: replace the unreachable signet seeds",
+   "url": "https://github.com/ksedgwic/clboss/pull/379"
+  },
+  {
+   "created": "2026-10-26",
+   "merged": "",
    "number": 626,
    "org": "onecli",
    "repo": "onecli/onecli",
@@ -1020,7 +1030,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 727,
+  "contrib_total": 728,
   "last_push": "2026-10-26",
   "primary_lang": "Python",
   "repos": 70
