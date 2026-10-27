@@ -19,6 +19,16 @@
  },
  "prs": [
   {
+   "created": "2026-10-27",
+   "merged": "",
+   "number": 436,
+   "org": "modelence",
+   "repo": "modelence/modelence",
+   "state": "open",
+   "title": "fix(auth): keep a failing auth hook from failing login, signup and email verification",
+   "url": "https://github.com/modelence/modelence/pull/436"
+  },
+  {
    "created": "2026-10-26",
    "merged": "",
    "number": 379,
@@ -1030,7 +1040,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 732,
+  "contrib_total": 734,
   "last_push": "2026-10-26",
   "primary_lang": "Python",
   "repos": 70
