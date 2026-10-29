@@ -260,11 +260,11 @@
   },
   {
    "created": "2026-10-10",
-   "merged": "",
+   "merged": "2026-10-29",
    "number": 434,
    "org": "vstakhov",
    "repo": "vstakhov/libucl",
-   "state": "open",
+   "state": "merged",
    "title": "Reject cyclic $ref in schema validation",
    "url": "https://github.com/vstakhov/libucl/pull/434"
   },
@@ -1040,7 +1040,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 739,
+  "contrib_total": 741,
   "last_push": "2026-10-26",
   "primary_lang": "Python",
   "repos": 70
