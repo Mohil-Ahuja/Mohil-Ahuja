@@ -504,7 +504,7 @@
    "number": 1031,
    "org": "ClickHouse",
    "repo": "ClickHouse/clickhouse-js",
-   "state": "open",
+   "state": "closed",
    "title": "fix: remove a trailing semicolon that is followed by a comment",
    "url": "https://github.com/ClickHouse/clickhouse-js/pull/1031"
   },
@@ -1040,7 +1040,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 746,
+  "contrib_total": 747,
   "last_push": "2026-10-29",
   "primary_lang": "Python",
   "repos": 70
