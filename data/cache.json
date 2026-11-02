@@ -94,7 +94,7 @@
    "number": 2801,
    "org": "lakehq",
    "repo": "lakehq/sail",
-   "state": "open",
+   "state": "closed",
    "title": "fix: reset the current namespace when switching catalogs",
    "url": "https://github.com/lakehq/sail/pull/2801"
   },
@@ -1040,7 +1040,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 752,
+  "contrib_total": 753,
   "last_push": "2026-10-30",
   "primary_lang": "Python",
   "repos": 70
