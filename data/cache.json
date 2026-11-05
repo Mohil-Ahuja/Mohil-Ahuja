@@ -74,7 +74,7 @@
    "number": 433,
    "org": "topoteretes",
    "repo": "topoteretes/cognee-community",
-   "state": "open",
+   "state": "closed",
    "title": "feat(connector): add Grafana Loki data-source connector",
    "url": "https://github.com/topoteretes/cognee-community/pull/433"
   },
@@ -334,7 +334,7 @@
    "number": 238,
    "org": "fencesandbox",
    "repo": "fencesandbox/fence",
-   "state": "open",
+   "state": "closed",
    "title": "perf: expand all \"**/\" patterns in one walk of cwd",
    "url": "https://github.com/fencesandbox/fence/pull/238"
   },
@@ -414,7 +414,7 @@
    "number": 1921,
    "org": "unikraft",
    "repo": "unikraft/unikraft",
-   "state": "open",
+   "state": "closed",
    "title": "drivers: Check the CPU limit before writing per-CPU vars",
    "url": "https://github.com/unikraft/unikraft/pull/1921"
   },
@@ -464,7 +464,7 @@
    "number": 122,
    "org": "unikraft",
    "repo": "unikraft/catalog-core",
-   "state": "open",
+   "state": "closed",
    "title": "bincompat-{java,rust}-hello: Select arch_prctl() from posix-process",
    "url": "https://github.com/unikraft/catalog-core/pull/122"
   },
@@ -484,7 +484,7 @@
    "number": 1918,
    "org": "unikraft",
    "repo": "unikraft/unikraft",
-   "state": "open",
+   "state": "closed",
    "title": "lib/nolibc: Drop unreachable CONFIG_LIBNEWLIBC guard in timegm()",
    "url": "https://github.com/unikraft/unikraft/pull/1918"
   },
@@ -514,7 +514,7 @@
    "number": 2461,
    "org": "jitsi",
    "repo": "jitsi/jitsi-videobridge",
-   "state": "open",
+   "state": "closed",
    "title": "fix: Remove expired non-visitor endpoints from speech activity",
    "url": "https://github.com/jitsi/jitsi-videobridge/pull/2461"
   },
@@ -534,7 +534,7 @@
    "number": 1917,
    "org": "unikraft",
    "repo": "unikraft/unikraft",
-   "state": "open",
+   "state": "closed",
    "title": "drivers/xen/9pfront: Drop unreachable non-scheduler paths",
    "url": "https://github.com/unikraft/unikraft/pull/1917"
   },
@@ -1040,7 +1040,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 760,
+  "contrib_total": 761,
   "last_push": "2026-10-30",
   "primary_lang": "Python",
   "repos": 70
