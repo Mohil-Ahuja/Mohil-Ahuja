@@ -13,11 +13,31 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-11-08T20:21:04Z",
+  "at": "2026-11-09T09:25:38Z",
   "message": "",
-  "repo": "Mohil-Ahuja/ci-scratch"
+  "repo": "Mohil-Ahuja/paradedb"
  },
  "prs": [
+  {
+   "created": "2026-11-09",
+   "merged": "",
+   "number": 7331,
+   "org": "paradedb",
+   "repo": "paradedb/paradedb",
+   "state": "open",
+   "title": "fix: order NULL and empty string groups correctly in Aggregate Scan",
+   "url": "https://github.com/paradedb/paradedb/pull/7331"
+  },
+  {
+   "created": "2026-11-09",
+   "merged": "",
+   "number": 8227,
+   "org": "getsentry",
+   "repo": "getsentry/sentry-python",
+   "state": "open",
+   "title": "fix(gql): Remove credentials and query values from the transport URL",
+   "url": "https://github.com/getsentry/sentry-python/pull/8227"
+  },
   {
    "created": "2026-10-27",
    "merged": "",
@@ -1040,9 +1060,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 781,
-  "last_push": "2026-11-08",
+  "contrib_total": 789,
+  "last_push": "2026-11-09",
   "primary_lang": "Python",
-  "repos": 72
+  "repos": 73
  }
 }
