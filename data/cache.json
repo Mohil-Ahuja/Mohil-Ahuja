@@ -7,15 +7,15 @@
   "JavaScript": 5724,
   "Makefile": 3619,
   "PowerShell": 4398,
-  "Python": 2476935,
+  "Python": 2480354,
   "Rust": 9060,
   "Shell": 28147,
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-11-09T18:46:44Z",
+  "at": "2026-11-09T18:46:37Z",
   "message": "",
-  "repo": "Mohil-Ahuja/modelence"
+  "repo": "Mohil-Ahuja/sentry-python"
  },
  "prs": [
   {
@@ -30,11 +30,11 @@
   },
   {
    "created": "2026-11-09",
-   "merged": "",
+   "merged": "2026-11-10",
    "number": 8227,
    "org": "getsentry",
    "repo": "getsentry/sentry-python",
-   "state": "open",
+   "state": "merged",
    "title": "fix(gql): Remove credentials and query values from the transport URL",
    "url": "https://github.com/getsentry/sentry-python/pull/8227"
   },
@@ -1060,7 +1060,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 790,
+  "contrib_total": 796,
   "last_push": "2026-11-09",
   "primary_lang": "Python",
   "repos": 73
