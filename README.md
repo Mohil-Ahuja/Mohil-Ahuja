@@ -4,14 +4,14 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=102309069c"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=102309069c" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=a1c564d289"><img alt="MOHIL AHUJA — CS + AI @ Plaksha  ·  systems, ML, and security" src="assets/hero-light.svg?v=a1c564d289" width="880"></picture>
 
 </div>
 
 I work on the parts of a system that are easy to claim and hard to prove —
 latency you have to measure at the tail, permissions you have to enforce rather
 than document, a wrong number that still renders as a working page. Lately that
-has mostly meant fixing other people's production code: **82 pull requests** across **36 organisations** — **32 merged upstream**, 23 in review.
+has mostly meant fixing other people's production code: **82 pull requests** across **36 organisations** — **37 merged upstream**, 18 in review.
 
 Where a number appears below, it was measured, and the method is written down
 in that project's README.
@@ -22,7 +22,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=102309069c"><img alt="Open source contributions: 82 pull requests across 36 organisations, 32 merged" src="assets/oss-light.svg?v=102309069c" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg?v=a1c564d289"><img alt="Open source contributions: 82 pull requests across 36 organisations, 37 merged" src="assets/oss-light.svg?v=a1c564d289" width="880"></picture>
 
 </div>
 
@@ -33,11 +33,11 @@ in that project's README.
 **Merged upstream**
 
 - [`getsentry/sentry-python#8227`](https://github.com/getsentry/sentry-python/pull/8227) — fix(gql): Remove credentials and query values from the transport URL _(merged 2026-11-10)_
-- [`vstakhov/libucl#434`](https://github.com/vstakhov/libucl/pull/434) — Reject cyclic $ref in schema validation _(merged 2026-10-29)_
-- [`modelence/modelence#418`](https://github.com/modelence/modelence/pull/418) — fix(auth): revoke a user's other reset links when the password is reset _(merged 2026-10-27)_
-- [`assimp/assimp#6920`](https://github.com/assimp/assimp/pull/6920) — 3MF: skip non-triangle faces when exporting triangles _(merged 2026-10-23)_
-- [`lakekeeper/lakekeeper#2139`](https://github.com/lakekeeper/lakekeeper/pull/2139) — feat(storage): optionally add a principal to the STS session policy _(merged 2026-10-22)_
-- …and 27 more merged upstream
+- [`ksedgwic/clboss#379`](https://github.com/ksedgwic/clboss/pull/379) — ConnectFinderByHardcode: replace the unreachable signet seeds _(merged 2026-11-10)_
+- [`ksedgwic/clboss#378`](https://github.com/ksedgwic/clboss/pull/378) — clboss-channel-sizing: read pre-0.17.3 samples against the channel they describe _(merged 2026-11-10)_
+- [`ksedgwic/clboss#371`](https://github.com/ksedgwic/clboss/pull/371) — ActiveProber: probe through the peer's channel with the most to spend _(merged 2026-11-10)_
+- [`ksedgwic/clboss#369`](https://github.com/ksedgwic/clboss/pull/369) — PeerComplaintsDesk: close each channel of a multi-channel peer _(merged 2026-11-10)_
+- …and 32 more merged upstream
 
 </td>
 <td width="50%" valign="top">
@@ -46,10 +46,10 @@ in that project's README.
 
 - [`paradedb/paradedb#7331`](https://github.com/paradedb/paradedb/pull/7331) — fix: order NULL and empty string groups correctly in Aggregate Scan _(opened 2026-11-09)_
 - [`modelence/modelence#436`](https://github.com/modelence/modelence/pull/436) — fix(auth): keep a failing auth hook from failing login, signup and email verification _(opened 2026-10-27)_
-- [`ksedgwic/clboss#379`](https://github.com/ksedgwic/clboss/pull/379) — ConnectFinderByHardcode: replace the unreachable signet seeds _(opened 2026-10-26)_
 - [`onecli/onecli#626`](https://github.com/onecli/onecli/pull/626) — fix(gitlab): cover GET /api/v4/user with a read tool so whoami isn't blocked _(opened 2026-10-26)_
 - [`tursodatabase/turso#10690`](https://github.com/tursodatabase/turso/pull/10690) — core/mvcc: undo only the conflicting write in a shared autocommit transaction _(opened 2026-10-24)_
-- …and 18 more open
+- [`assimp/assimp#6934`](https://github.com/assimp/assimp/pull/6934) — OpenGEX test: import files that end inside a property value _(opened 2026-10-13)_
+- …and 13 more open
 
 </td>
 </tr>
@@ -64,9 +64,9 @@ in that project's README.
 <div align="center">
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=102309069c"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=102309069c" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=102309069c"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=102309069c" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=102309069c"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=102309069c" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=102309069c"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=102309069c" width="428"></picture></a></td></tr>
-<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=102309069c"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=102309069c" width="428"></picture></a></td><td width="50%"></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/low-latency-order-book-engine"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-orderbook-dark.svg?v=a1c564d289"><img alt="low-latency-order-book-engine — 4.74 µs. p50 rebuild latency over 15,213,070 real NASDAQ ITCH messages" src="assets/tile-orderbook-light.svg?v=a1c564d289" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/Steward"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-steward-dark.svg?v=a1c564d289"><img alt="steward — MCP authz. per-action permission scopes and audit trail for LLM agents" src="assets/tile-steward-light.svg?v=a1c564d289" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://github.com/Mohil-Ahuja/TreeCanopySegmentor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-canopy-dark.svg?v=a1c564d289"><img alt="tree-canopy-segmentor — 0.42 mAP. up from 0.33 across 100+ experiments · 14th of 143 teams" src="assets/tile-canopy-light.svg?v=a1c564d289" width="428"></picture></a></td><td width="50%" valign="top"><a href="https://communityfund.stellar.org/submissions/recE9zzY2T4XFAHpE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-kryo-dark.svg?v=a1c564d289"><img alt="kryo — $10K grant. Stellar Development Foundation · real-time payment settlement" src="assets/tile-kryo-light.svg?v=a1c564d289" width="428"></picture></a></td></tr>
+<tr><td width="50%" valign="top"><a href="https://apps.apple.com/in/app/uniengage/id6764577363"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-uniengage-dark.svg?v=a1c564d289"><img alt="uniengage — iOS live. co-founded · DPIIT-recognised · 500+ student pilot" src="assets/tile-uniengage-light.svg?v=a1c564d289" width="428"></picture></a></td><td width="50%"></td></tr>
 </table>
 
 </div>
@@ -83,7 +83,7 @@ in that project's README.
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=102309069c"><img alt="Capability matrix" src="assets/capability-light.svg?v=102309069c" width="880"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg?v=a1c564d289"><img alt="Capability matrix" src="assets/capability-light.svg?v=a1c564d289" width="880"></picture>
 
 </div>
 
@@ -106,4 +106,4 @@ in that project's README.
 [Email](mailto:mohilahuja@gmail.com) · [LinkedIn](https://www.linkedin.com/in/mohil-ahuja-ba559722b/) · India
 
 <sub>Contribution counts, panels and the lists above are rebuilt from the
-GitHub API every six hours. Output last changed 2026-11-10.</sub>
+GitHub API every six hours. Output last changed 2026-11-11.</sub>

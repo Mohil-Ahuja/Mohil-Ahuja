@@ -13,9 +13,9 @@
   "TypeScript": 81567
  },
  "last": {
-  "at": "2026-11-09T18:46:37Z",
+  "at": "2026-11-09T09:56:16Z",
   "message": "",
-  "repo": "Mohil-Ahuja/sentry-python"
+  "repo": "Mohil-Ahuja/paradedb"
  },
  "prs": [
   {
@@ -50,11 +50,11 @@
   },
   {
    "created": "2026-10-26",
-   "merged": "",
+   "merged": "2026-11-10",
    "number": 379,
    "org": "ksedgwic",
    "repo": "ksedgwic/clboss",
-   "state": "open",
+   "state": "merged",
    "title": "ConnectFinderByHardcode: replace the unreachable signet seeds",
    "url": "https://github.com/ksedgwic/clboss/pull/379"
   },
@@ -80,11 +80,11 @@
   },
   {
    "created": "2026-10-23",
-   "merged": "",
+   "merged": "2026-11-10",
    "number": 378,
    "org": "ksedgwic",
    "repo": "ksedgwic/clboss",
-   "state": "open",
+   "state": "merged",
    "title": "clboss-channel-sizing: read pre-0.17.3 samples against the channel they describe",
    "url": "https://github.com/ksedgwic/clboss/pull/378"
   },
@@ -380,11 +380,11 @@
   },
   {
    "created": "2026-10-09",
-   "merged": "",
+   "merged": "2026-11-10",
    "number": 371,
    "org": "ksedgwic",
    "repo": "ksedgwic/clboss",
-   "state": "open",
+   "state": "merged",
    "title": "ActiveProber: probe through the peer's channel with the most to spend",
    "url": "https://github.com/ksedgwic/clboss/pull/371"
   },
@@ -440,21 +440,21 @@
   },
   {
    "created": "2026-10-08",
-   "merged": "",
+   "merged": "2026-11-10",
    "number": 369,
    "org": "ksedgwic",
    "repo": "ksedgwic/clboss",
-   "state": "open",
+   "state": "merged",
    "title": "PeerComplaintsDesk: close each channel of a multi-channel peer",
    "url": "https://github.com/ksedgwic/clboss/pull/369"
   },
   {
    "created": "2026-10-08",
-   "merged": "",
+   "merged": "2026-11-10",
    "number": 368,
    "org": "ksedgwic",
    "repo": "ksedgwic/clboss",
-   "state": "open",
+   "state": "merged",
    "title": "FeeModderByBalance: sum the balance over the peer's live channels",
    "url": "https://github.com/ksedgwic/clboss/pull/368"
   },
@@ -1060,7 +1060,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 796,
+  "contrib_total": 807,
   "last_push": "2026-11-09",
   "primary_lang": "Python",
   "repos": 73
