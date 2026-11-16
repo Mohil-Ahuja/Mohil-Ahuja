@@ -19,6 +19,16 @@
  },
  "prs": [
   {
+   "created": "2026-11-16",
+   "merged": "",
+   "number": 381,
+   "org": "ksedgwic",
+   "repo": "ksedgwic/clboss",
+   "state": "open",
+   "title": "SwapManager: count a swap whose preimage is out as paid",
+   "url": "https://github.com/ksedgwic/clboss/pull/381"
+  },
+  {
    "created": "2026-11-09",
    "merged": "",
    "number": 7331,
@@ -40,11 +50,11 @@
   },
   {
    "created": "2026-10-27",
-   "merged": "",
+   "merged": "2026-11-16",
    "number": 436,
    "org": "modelence",
    "repo": "modelence/modelence",
-   "state": "open",
+   "state": "merged",
    "title": "fix(auth): keep a failing auth hook from failing login, signup and email verification",
    "url": "https://github.com/modelence/modelence/pull/436"
   },
@@ -1060,7 +1070,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 821,
+  "contrib_total": 823,
   "last_push": "2026-11-12",
   "primary_lang": "Python",
   "repos": 73
