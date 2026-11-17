@@ -19,6 +19,16 @@
  },
  "prs": [
   {
+   "created": "2026-11-17",
+   "merged": "",
+   "number": 8307,
+   "org": "getsentry",
+   "repo": "getsentry/sentry-python",
+   "state": "open",
+   "title": "fix(gql): Scope the event processor to the query",
+   "url": "https://github.com/getsentry/sentry-python/pull/8307"
+  },
+  {
    "created": "2026-11-16",
    "merged": "",
    "number": 381,
@@ -1070,7 +1080,7 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 825,
+  "contrib_total": 831,
   "last_push": "2026-11-16",
   "primary_lang": "Python",
   "repos": 73
