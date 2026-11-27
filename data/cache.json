@@ -7,9 +7,9 @@
   "JavaScript": 5724,
   "Makefile": 3619,
   "PowerShell": 4398,
-  "Python": 2480354,
+  "Python": 2840435,
   "Rust": 9060,
-  "Shell": 28147,
+  "Shell": 29216,
   "TypeScript": 81567
  },
  "last": {
@@ -1080,9 +1080,9 @@
   "uniengage": []
  },
  "stats": {
-  "contrib_total": 850,
+  "contrib_total": 853,
   "last_push": "2026-11-17",
   "primary_lang": "Python",
-  "repos": 73
+  "repos": 74
  }
 }
